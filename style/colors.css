@@ -1,25 +1,25 @@
-#main-color
+.main-color
 {
 	background: #f88496;
 	color:white;
 }
 
-#main-color-text
+.main-color-text
 {
 	color: #f88496;
 }
 
-#main-hover-text:hover
+.main-hover-text:hover
 {
 	color:#f88496;
 }
 
-#accent-text-color
+.accent-text-color
 {
-	color:#232323;
+	color:#232323 !important;
 }
 
-#accent-color
+.accent-color
 {
 	background:#232323;
 	color:white;

@@ -1,0 +1,96 @@
+a
+{
+	text-decoration: none;
+}
+
+
+/* my text params*/
+
+ @font-face {
+    font-family: Lato; /* Гарнитура шрифта */
+    src: url(fonts/9623.ttf); /* Путь к файлу со шрифтом */
+   }
+
+.my-small-text
+{
+	font-size: 12px;
+	font-family: 'Lato', sans-serif;
+}
+
+.my-middle-text
+{
+	font-size: 14px;
+	font-family: 'Lato', sans-serif;
+}
+
+.block-big-text
+{
+	font-size: 40px;
+	font-family: 'The Huntsman', serif;
+}
+
+.block-small-text
+{
+	font-size: 16px;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/* main menu */
+
+.but-nav-top
+{
+	margin:20px;
+}
+
+
+.but-nav-top40
+{
+	margin:40px;
+}
+
+.but-nav-top:hover
+{
+	color:#f88496 !important;
+	text-decoration: none !important;
+}
+.but-nav-top40:hover
+{
+	color:#f88496 !important;
+	text-decoration: none !important;
+}
+
+.nav-margin-top
+{
+	margin-top:10px;
+}
+
+.nav-margin-top50
+{
+	margin-top:50px;
+}
+
+.bot-line
+{
+	box-shadow: 0px 1px 0px 0px #f4f4f4;
+}
+
+/* content*/
+
+/*slider*/
+
+.slider
+{
+	width:100%;
+}
+
+/* the most orded*/
+
+.block
+{
+	padding:30px;
+}
+
+.block:hover
+{
+	box-shadow: 0px 0px 0px 3px #000000;
+}

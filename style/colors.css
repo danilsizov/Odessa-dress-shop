@@ -1,9 +1,26 @@
 #main-color
 {
 	background: #f88496;
+	color:white;
 }
 
-#text-color
+#main-color-text
+{
+	color: #f88496;
+}
+
+#main-hover-text:hover
+{
+	color:#f88496;
+}
+
+#accent-text-color
 {
 	color:#232323;
+}
+
+#accent-color
+{
+	background:#232323;
+	color:white;
 }

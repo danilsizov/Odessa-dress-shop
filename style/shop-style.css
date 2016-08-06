@@ -1,0 +1,21 @@
+.small-line
+{
+	background: #f4f4f4;
+	color:#3f3f3f;
+	width:70%;
+	padding: 15px;
+	font-size: 12px;
+}
+
+.float-right
+{
+	float:right;
+}
+
+.black-box
+{
+	float:left;
+	background: #232323;
+	color:white;
+	width:30%;
+}

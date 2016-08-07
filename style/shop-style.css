@@ -1,10 +1,12 @@
 .small-line
 {
+	float: left;
 	background: #f4f4f4;
 	color:#3f3f3f;
 	width:70%;
 	padding: 15px;
 	font-size: 12px;
+	text-align: right;
 }
 
 .float-right
@@ -14,8 +16,86 @@
 
 .black-box
 {
-	float:left;
+	float: left;
 	background: #232323;
 	color:white;
 	width:30%;
+	padding: 15px;
+	font-size: 12px;
+}
+
+.title-catalog
+{
+	font-size: 14px;
+	color:#232323;
+	font-family: 'Lato', sans-serif;
+}
+
+.float-right-arrow
+{
+	float:right;
+	margin-top:10px;
+}
+
+.catalog-punkt
+{
+	margin-left:20px;
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	color:#232323;
+}
+
+.categories
+{
+	margin-left:30px;
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	color:#232323;
+}
+
+.categories:hover
+{
+	color:#f88496;
+}
+
+/* Скрываем реальный чекбокс */
+.checkbox {
+    display: none;
+}
+ 
+/* Задаем внешний вид для нашего кастомного чекбокса. Все обязательные свойства прокомментированы, остальные же свойства меняйте по вашему усмотрению */
+.checkbox-custom {
+    position: relative;      /* Обязательно задаем, чтобы мы могли абсолютным образом позиционировать псевдоэлемент внютри нашего кастомного чекбокса */
+    width: 20px;             /* Обязательно задаем ширину */
+    height: 20px;            /* Обязательно задаем высоту */
+    border: 2px solid #ccc;
+    border-radius: 3px;
+}
+ 
+/* Кастомный чекбокс и лейбл центрируем по вертикали. Если вам это не требуется, то вы можете убрать свойство vertical-align: middle из данного правила, но свойство display: inline-block обязательно должно быть */
+.checkbox-custom,
+.label {
+    display: inline-block;
+    vertical-align: middle;
+}
+ 
+/* Если реальный чекбокс у нас отмечен, то тогда добавляем данный признак и к нашему кастомному чекбоксу  */
+.checkbox:checked + .checkbox-custom::before {
+    content: "";             /* Добавляем наш псевдоэлемент */
+    display: block;          /* Делаем его блочным элементом */
+    position: absolute;      /* Позиционируем его абсолютным образом */
+ 
+    /* Задаем расстояние от верхней, правой, нижней и левой границы */
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+ 
+    background: #413548;     /* Добавляем фон. Если требуется, можете поставить сюда картинку в виде "галочки", которая будет символизировать, что чекбокс отмечен */
+    border-radius: 2px;
+}
+
+.padding-bot
+{
+	padding-bottom: 20px;
 }

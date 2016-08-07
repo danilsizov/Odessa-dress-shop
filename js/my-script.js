@@ -16,3 +16,14 @@ window.onclick = function(event) {
     }
   }
 }
+
+$(document).ready(function () {
+  $('#top-slider').bxSlider({
+    auto: true,
+    nextSelector: '#top-slider-right',
+    prevSelector: '#top-slider-left',
+    nextText: ' ',
+    prevText: ' ',
+    autoControls: false
+  });
+});

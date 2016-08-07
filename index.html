@@ -4,16 +4,18 @@
 	<link rel="stylesheet" href="style/bootstrap.min.css">
 	<link rel="stylesheet" href="style/my-style.css">
 	<link rel="stylesheet" href="style/colors.css">
+	<link rel="stylesheet" href="style/jquery.bxslider.css">
 	<meta charset="utf-8">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="style/bootstrap-theme.min.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="style/bootstrap-theme.min.css">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script src="js/my-script.js"></script>
 </head>
 
 <body>
@@ -38,7 +40,7 @@
 	</div>
 	<div class="row">
 	<div class="col-lg-6">
-		<img src="image/black.png" width="35%">
+		<img src="image/Black.png" width="35%">
 	</div>
 	<div class="col-lg-6 nav-margin-top50">
 		<div class="my-middle-text accent-text-color my-nav">
@@ -52,7 +54,16 @@
 </div>
 
 <div class="slider">
-<img src="image/sliders.png" width="100%">
+	<ul id="top-slider">
+		<li><img src="http://lorempixel.com/output/animals-q-c-1920-650-5.jpg"></li>
+		<li><img src="http://lorempixel.com/output/people-q-c-1920-650-5.jpg"></li>
+		<li><img src="http://lorempixel.com/output/food-q-c-1920-650-4.jpg"></li>
+		<li><img src="http://lorempixel.com/output/abstract-q-c-1920-650-10.jpg"></li>
+	</ul>
+	<div class="selectors">
+		<span id="top-slider-left"></span>
+		<span id="top-slider-right"></span>
+	</div>
 </div>
 
 <div class="container">
@@ -77,7 +88,7 @@
 	</div>
 
 </div>
-</div>	
+</div>
 
 <div class="container">
 <div class="our-features nav-margin-top50">
@@ -124,7 +135,7 @@
 </div>
 <div class="col-lg-3">
 	<div class="back-image">
-	
+
 	</div>
 </div>
 </div>
@@ -147,7 +158,7 @@
 	</div>
 	<div class="col-lg-5">
 	<div class="name-of-product nav-margin-top50" >
-		Bonded Strappy Doll Dress 
+		Bonded Strappy Doll Dress
 	</div>
 	<div class="my-prise">
 	<span class="main-color-text">$79,99</span><span class="old-prise left-mar">$89,00</span>

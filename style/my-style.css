@@ -398,16 +398,16 @@ a
 }
 
 input {
- padding: 6px;
- font-size: 12px;
- background: #282828;
- outline: none;
- color: #b9b9b9;
- width: 50%;
- position: absolute;
- left: 25%;
- float: left;
- border:none !important;
+	padding: 6px;
+	font-size: 12px;
+	background: #282828;
+	outline: none;
+	color: #b9b9b9;
+	width: 75%;
+	position: absolute;
+	left: 15px;
+	float: left;
+	border:none !important;
 }
 .block
 {

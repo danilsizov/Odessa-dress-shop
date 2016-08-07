@@ -60,7 +60,7 @@
 		<li><img src="http://lorempixel.com/output/food-q-c-1920-650-4.jpg"></li>
 		<li><img src="http://lorempixel.com/output/abstract-q-c-1920-650-10.jpg"></li>
 	</ul>
-	<div class="selectors">
+	<div class="slider-selectors">
 		<span id="top-slider-left"></span>
 		<span id="top-slider-right"></span>
 	</div>
@@ -194,8 +194,26 @@
 	</div>
 	</div>
 	<div class="col-lg-4">
-		<img src="image/image.png" width="100%" class="minus-margin">
-		<img src="image/mini-image.png" width="100%" class="margin-top">
+		<div class="slider minus-margin bottom-slider">
+			<ul id="bottom-slider" >
+				<li><img src="http://lorempixel.com/output/technics-h-c-355-385-5.jpg"></li>
+				<li><img src="http://lorempixel.com/output/food-h-c-355-385-3.jpg"></li>
+				<li><img src="http://lorempixel.com/output/nature-h-c-355-385-5.jpg"></li>
+				<li><img src="http://lorempixel.com/output/nature-h-c-355-385-3.jpg"></li>
+			</ul>
+			<div class="slider-selectors">
+				<span id="bottom-slider-left"></span>
+				<span id="bottom-slider-right"></span>
+			</div>
+			<div id="bottom-slider-pager">
+			  <a data-slide-index="0" href=""><img src="http://lorempixel.com/output/technics-h-c-355-385-5.jpg"></a>
+			  <a data-slide-index="1" href=""><img src="http://lorempixel.com/output/food-h-c-355-385-3.jpg"></a>
+				<a data-slide-index="2" href=""><img src="http://lorempixel.com/output/nature-h-c-355-385-5.jpg"></a>
+			  <a data-slide-index="3" href=""><img src="http://lorempixel.com/output/nature-h-c-355-385-3.jpg"></a>
+			</div>
+		</div>
+		<!-- <img src="image/image.png" width="100%" class="minus-margin">
+		<img src="image/mini-image.png" width="100%" class="margin-top"> -->
 	</div>
 </div>
 </div>
@@ -233,26 +251,6 @@
 </div>
 </div>
 
-<script>
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
 
 </body>
 

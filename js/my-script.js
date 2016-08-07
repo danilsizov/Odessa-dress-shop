@@ -26,4 +26,14 @@ $(document).ready(function () {
     prevText: ' ',
     autoControls: false
   });
+
+  $('#bottom-slider').bxSlider({
+    auto: true,
+    nextSelector: '#bottom-slider-right',
+    prevSelector: '#bottom-slider-left',
+    nextText: ' ',
+    prevText: ' ',
+    autoControls: false,
+    pagerCustom: '#bottom-slider-pager'
+  });
 });

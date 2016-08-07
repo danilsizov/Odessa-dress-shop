@@ -110,10 +110,10 @@ a
 	max-height: 650px;
 	position: relative;
 }
-.slider .bx-controls{
+.slider .bx-controls, .carousel-container .bx-controls{
 	display:none;
 }
-.slider .bx-wrapper .bx-viewport{
+.slider .bx-wrapper .bx-viewport, .carousel-container .bx-wrapper .bx-viewport{
 	box-shadow: none;
 	left:0;
 	border: none;
@@ -187,6 +187,44 @@ a
 	background-image: url(../image/top-slider-arrow-right-hover.png);
 }
 
+.carousel-container{
+	position: relative;
+}
+.carousel-controls{
+	width: 100%;
+	height: 100%;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+	position: absolute;
+	top:0;
+}
+.carousel-controls a{
+	width: 40px;
+	height:40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+}
+#carousel-left{
+	margin-top: 23px;
+}
+#carousel-left a{
+	background-image: url(../image/carousel-arrow-up.png);
+}
+#carousel-left:hover a{
+	background-image: url(../image/carousel-arrow-up-hover.png);
+}
+#carousel-right{
+	margin-bottom: 23px;
+}
+#carousel-right a{
+	background-image: url(../image/carousel-arrow-down.png);
+}
+#carousel-right:hover a{
+	background-image: url(../image/carousel-arrow-down-hover.png);
+}
 /* the most orded*/
 
 .block
@@ -199,7 +237,6 @@ a
 {
 	box-shadow: 0px 0px 0px 3px #000000;
 }
-
 
 
 /* our-features

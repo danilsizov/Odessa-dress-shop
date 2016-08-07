@@ -36,4 +36,16 @@ $(document).ready(function () {
     autoControls: false,
     pagerCustom: '#bottom-slider-pager'
   });
+  $('#carousel').bxSlider({
+    mode: 'vertical',
+    slideWidth: 258,
+    minSlides: 4,
+    maxSlides: 4,
+    slideMargin: 10,
+    moveSlides: 1,
+    nextSelector: '#carousel-right',
+    prevSelector: '#carousel-left',
+    nextText: ' ',
+    prevText: ' '
+  });
 });

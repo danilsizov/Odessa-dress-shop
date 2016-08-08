@@ -3,18 +3,20 @@
 
 	<link rel="stylesheet" href="style/bootstrap.min.css">
 	<link rel="stylesheet" href="style/my-style.css">
-	<link rel="stylesheet" href="style/shop-style.css">
 	<link rel="stylesheet" href="style/colors.css">
-	<link rel="stylesheet" href="style/sign-in-style.css">
+	<link rel="stylesheet" href="style/jquery.bxslider.css">
+	<link rel="stylesheet" href="style/shop-style.css">
 	<meta charset="utf-8">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="style/bootstrap-theme.min.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="style/bootstrap-theme.min.css">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script src="js/my-script.js"></script>
 
 </head>
 
@@ -53,18 +55,75 @@
 	</div>
 </div>
 <div class="row nav-margin-top50">
-	<img src="image/Breadcrumbs-sign-in.png" width="100%">
+	<div class="small-line"><strong>Главная</strong></div><div class="black-box"><strong>Прдукт</strong></div>
 </div>
 
 <div class="container">
-	<div class="col-lg-3">
+<div class="col-lg-5 nav-margin-top50">
 
-	</div>
-	<div class="col-lg-6 nav-margin-top50">
-	<img src="image/sign-in-form.png" width="100%">
-	</div>
+	<div class="slider bottom-slider">
+			<ul id="bottom-slider" >
+				<li><img src="image/dress.jpg"></li>
+				<li><img src="image/dress.jpg"></li>
+				<li><img src="image/dress.jpg"></li>
+				<li><img src="image/dress.jpg"></li>
+			</ul>
+			<div class="slider-selectors">
+				<span id="bottom-slider-left"></span>
+				<span id="bottom-slider-right"></span>
+			</div>
+			<div id="bottom-slider-pager">
+			  <a data-slide-index="0" href=""><img src="image/dress.jpg"></a>
+			  <a data-slide-index="1" href=""><img src="image/dress.jpg"></a>
+				<a data-slide-index="2" href=""><img src="image/dress.jpg"></a>
+			  <a data-slide-index="3" href=""><img src="image/dress.jpg"></a>
+			</div>
+		</div>
 
 </div>
+<div class="col-lg-7">
+	<div class="name-of-product nav-margin-top50" >
+		Bonded Strappy Doll Dress
+	</div>
+	<div class="my-prise">
+	<span class="main-color-text">$79,99</span><span class="old-prise left-mar">$89,00</span>
+	<p><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/star.png"><img src="image/star.png"></p>
+	<p><img src="image/weight.png"><img src="image/information.png" class="let-mar-inf"></p>
+	<p class="mylatotext nav-margin-top30">A diffusion line of Franco Moschino's iconic Italian design house, Love Moschino creates a playful and irreverent collection injected with a sense of youthful cool. </p>
+	</div>
+	<div class="row left-mar">
+		<div class="dropdown float-left full-width nav-margin-top30">
+		  <button onclick="myFunction()" class="dropbtn">White  <img src="image/arrow.png" class="let-mar"></button>
+		  <div id="myDropdown" class="dropdown-content">
+		    <a href="#">Black</a>
+		    <a href="#">Yellow</a>
+		    <a href="#">Blue</a>
+		  </div>
+		</div>
+		<div class="dropdown float-left full-width nav-margin-top">
+		  <button onclick="myFunction()" class="dropbtn">Color  <img src="image/arrow.png" class="let-mar"></button>
+		  <div id="myDropdown" class="dropdown-content">
+		    <a href="#">Black</a>
+		    <a href="#">Yellow</a>
+		    <a href="#">Blue</a>
+		  </div>
+		</div>
+	</div>
+	<div class="row nav-margin-top30">
+		<div class="but-popular accent-color nav-margin-top text-center \">
+			<img src="image/bug-white.png"> В корзину
+		</div>
+		<div class="but-popular main-color nav-margin-top text-center let-mar-inf">
+			<img src="image/like.png"> Like!
+		</div>
+	</div>
+	<img src="image/Product-Information.png" width="100%" class="nav-margin-top">
+	</div>
+</div>
+
+
+
+
 <div class="footer">
 <div class="container">
 	<div class="col-lg-3">
@@ -97,5 +156,8 @@
 	</div>
 </div>
 </div>
+
+
 </body>
+
 </html>

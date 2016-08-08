@@ -99,3 +99,32 @@
 {
 	padding-bottom: 20px;
 }
+#slider.noUi-horizontal{
+	height: 6px;
+}
+#slider.noUi-horizontal .noUi-handle{
+	width:12px;
+	height: 14px;
+	border-radius: 0px;
+	background-color:#000;
+	box-shadow: none;
+	border:none;
+	left: -9px;
+}
+#slider .noUi-connect{
+	background: #ccc;
+}
+.noUi-horizontal .noUi-handle::before{
+	content: none;
+}
+.noUi-horizontal .noUi-handle::after{
+	position: absolute;
+	top:13px;
+	left: 0px;
+	width: 0;
+	height: 0;
+	border: 6px solid transparent; 
+	background:transparent;
+	border-top-color: #000;  
+	border-bottom: 0;
+}

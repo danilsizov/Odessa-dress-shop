@@ -1,6 +1,11 @@
-function myFunction() {
+function myColorFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
+
+function mySizeFunction() {
+    document.getElementById("Size").classList.toggle("show");
+}
+
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {

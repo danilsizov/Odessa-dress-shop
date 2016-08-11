@@ -298,7 +298,12 @@ a
 
 .let-mar-prod
 {
-	margin-left: 190px;
+	margin-left: 430px;
+	margin-top: 10px;
+}
+.let-mar-prod-new
+{
+	margin-left: 389px;
 }
 
 .name-of-product
@@ -428,4 +433,81 @@ input {
 .float-left-my
 {
 	float:left;
+}
+
+.nav-padding
+{
+	padding:10px;
+}
+
+.full-block
+{
+	position: absolute;
+	width:100%;
+	height:100%;
+}
+
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+ul.menu > li {
+    float: left;
+    position: relative;
+}
+ul.menu > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color:white;
+}
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 200px;
+    top: 100%;
+    left: 0px;
+    z-index: 100;
+    color:white;
+}
+ul.submenu > li {
+    display: block;
+}
+ul.submenu > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+
+.bot-line-pink
+{
+	border-width: 0px 0px 2px 0px;
+	border-color: #f88496;
+	border-style: dashed;
+}
+
+.right-line
+{
+	border-width: 0px 1px 0px 0px;
+	border-color: #f4f4f4;
+	border-style: solid;
+
+}
+
+input
+{
+	left:0px !important;
 }

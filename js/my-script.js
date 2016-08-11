@@ -6,10 +6,41 @@ function mySizeFunction() {
     document.getElementById("Size").classList.toggle("show");
 }
 
+function myMoneyFunction() {
+    document.getElementById("Money").classList.toggle("show");
+}
+
+function myMoney1Function() {
+    document.getElementById("Money1").classList.toggle("show");
+}
+
+function myLanguageFunction() {
+    document.getElementById("Language").classList.toggle("show");
+}
+
+function myFAQFunction() {
+    document.getElementById("FAQ").classList.toggle("show");
+}
+
+
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropmy')) {
 
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;

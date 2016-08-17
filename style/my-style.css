@@ -511,3 +511,13 @@ input
 {
 	left:0px !important;
 }
+
+.top-mar-min
+{
+	margin-top: -10px;
+}
+
+.float-right
+{
+	float:right;
+}

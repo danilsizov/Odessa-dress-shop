@@ -175,8 +175,8 @@
 }
 
 .placeholder{
-	height: 260px;
-	width: 260px;
+	height: 400px;
+	width: 300px;
 	background:url(../image/dress-new.jpg);
 	background-size: 100% 100%;
 }

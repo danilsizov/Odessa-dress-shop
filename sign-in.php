@@ -1,3 +1,4 @@
+<?php require_once 'lib/templates.php';?>
 <html>
 <head>
 
@@ -22,7 +23,7 @@
 <body>
 <?php echo getHeaderTemplate(); ?>
 <div class="row nav-margin-top50">
-	<img src="image/breadcrumbs-sign-in.png" width="100%">
+	<img src="image/Breadcrumbs-sign-in.png" width="100%">
 </div>
 
 <div class="container">
@@ -30,7 +31,7 @@
 
 	</div>
 	<div class="col-lg-6 nav-margin-top50">
-	<img src="image/sign-In-Form.png" width="100%">
+	<img src="image/Sign-In-Form.png" width="100%">
 	</div>
 
 </div>

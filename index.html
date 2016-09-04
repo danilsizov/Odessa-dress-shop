@@ -18,12 +18,12 @@
 	<script src="js/my-script.js"></script>
 </head>
 
-<body>
+<body onLoad="load()">
 <div class="container">
 	<div class="row my-small-text accent-text-color nav-margin-top bot-line nav-padding">
 
 <div class="col-lg-2">
-		<img src="image/Black.png" width="85%">
+		<img src="image/black.png" width="85%">
 </div>
 	<div class="col-lg-10">
 		
@@ -86,10 +86,10 @@
 
 <div class="slider but-nav-top150">
 	<ul id="top-slider">
-		<li><img src="image/Sliders.png" width="100%"></li>
-		<li><img src="image/Sliders.png" width="100%"></li>
-		<li><img src="image/Sliders.png" width="100%"></li>
-		<li><img src="image/Sliders.png" width="100%"></li>
+		<li><img src="image/slider.jpg" height="100%" width="100%"></li>
+		<li><img src="image/slider.jpg" height="100%" width="100%"></li>
+		<li><img src="image/slider.jpg" height="100%" width="100%"></li>
+		<li><img src="image/slider.jpg" height="100%" width="100%"></li>
 	</ul>
 	<div class="slider-selectors">
 		<span id="top-slider-left"></span>
@@ -297,6 +297,51 @@
 </div>
 
 
+<div id="modulBlock" class="devicesModal">
+    	<div>
+		    <h1>Choose device</h1>
+		    <a href="#close" title="Закрыть" class="close">X</a>
+		    <table class="table table-striped">
+		        <tr class="head-table">
+		            <th>number</th>
+		            <th>id</th>
+		            <th>name</th>
+		            <th>type-device</th>
+		        </tr>
+			    <tr class="row-table" id="my-device-row7">
+			        <td id="number">7</td>
+			        <td id="id">12JK12498</td>
+			        <td id="name">Meizu E3</td>
+			        <td id="type-device">mobile</td>
+			    </tr>
+		    </table>
+		    <a href="#close">
+		      	<div class="check-ico"></div>
+		    </a>
+        </div>
+    </div>
+
+
+
 </body>
+
+<script type="text/javascript">
+	
+function onLoad()
+{
+	evInd=0;
+	var mainBut=document.getElementById('modulBlock');
+	if(evInd==0){
+		modulBlock.style.display = 'block';
+		evInd=1;
+	}else
+	{
+		
+		modulBlock.style.display = 'none';
+		evInd=0;
+	}
+}
+
+</script>
 
 </html>

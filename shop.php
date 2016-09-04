@@ -32,10 +32,10 @@
 		<div class="col-lg-10">
 			<div class="row">
 
-				<img src="image/search.png" width="24px"> | <a href="my-order.html" class="but-nav-top accent-text-color"><strong>Моя корзина</strong></a><img src="image/shop_cart.png" width="20px">
+				<img src="image/search.png" width="24px"> | <a href="my-order.php" class="but-nav-top accent-text-color"><strong>Моя корзина</strong></a><img src="image/shop_cart.png" width="20px">
 
 				<span class="float-right text-right">
-				<a href="sign-in.html" class="but-nav-top accent-text-color">Войти</a>
+				<a href="sign-in.php" class="but-nav-top accent-text-color">Войти</a>
 				<a href="#" class="but-nav-top accent-text-color dropmy" onclick="myMoneyFunction()">UAH</a>
 				<div id="Money" class="dropdown-content ">
 				    <a href="#">UAH 1грн=1грн</a>
@@ -58,11 +58,11 @@
 	<div class="col-lg-10">
 		<div class="my-middle-text accent-text-color my-nav">
 				<ul class="menu">
-			    <li><a href="index.html" class="but-nav-top40 accent-text-color"><strong>Главная</strong></a>
+			    <li><a href="index.php" class="but-nav-top40 accent-text-color"><strong>Главная</strong></a>
 			    </li>
-			    <li><a href="shop.html" class="but-nav-top40 accent-text-color"><strong>Каталог</strong></a>
+			    <li><a href="shop.php" class="but-nav-top40 accent-text-color"><strong>Каталог</strong></a>
 			    </li>
-			    <li><a href="shop.html" class="but-nav-top40 accent-text-color"><strong>Сотрудничество</strong></a>
+			    <li><a href="shop.php" class="but-nav-top40 accent-text-color"><strong>Сотрудничество</strong></a>
 			    </li>
 			    <li><a href="#" class="but-nav-top40 accent-text-color"><strong>Контакты</strong></a>
 			        
@@ -204,13 +204,13 @@
 		<img src="image/pagination.png" width="100%" class="bot-line padding-bot">
 		<div class="row">
 			<img src="image/grid.png" class="nav-margin-top25 float-left-my"><img src="image/list.png" class="nav-margin-top25 let-mar-inf float-left-my">
-			<a href="drop.html"><div class="but-popular accent-color nav-margin-top text-center float-right-arrow"> Дроп Шоппинг
+			<a href="drop.php"><div class="but-popular accent-color nav-margin-top text-center float-right-arrow"> Дроп Шоппинг
 			</div></a>
 			<div class="but-popular main-color nav-margin-top text-center float-right-arrow"> Скачать каталог
 			</div>
 
 		</div>
-<a href="product.html">
+<a href="product.php">
 			<div class="row products">
 				<div class="col-lg-6 proguct">
 					<div class="placeholder">
@@ -234,7 +234,7 @@
 
 				</div>
 				</a>
-				<a href="product.html">
+				<a href="product.php">
 				<div class="col-lg-6 proguct">
 					<div class="placeholder">
 						<div class="row">
@@ -281,7 +281,7 @@
 
 				</div>
 				</a>
-				<a href="product.html">
+				<a href="product.php">
 				<div class="col-lg-6 proguct">
 					<div class="placeholder">
 						<div class="row">
@@ -327,7 +327,7 @@
 
 				</div>
 				</a>
-				<a href="product.html">
+				<a href="product.php">
 				<div class="col-lg-6 proguct">
 					<div class="placeholder">
 						<div class="row">
@@ -373,7 +373,7 @@
 
 				</div>
 				</a>
-				<a href="product.html">
+				<a href="product.php">
 				<div class="col-lg-6 proguct">
 					<div class="placeholder">
 						<div class="row">
@@ -419,7 +419,7 @@
 
 				</div>
 				</a>
-				<a href="product.html">
+				<a href="product.php">
 				<div class="col-lg-6 proguct">
 					<div class="placeholder">
 						<div class="row">
@@ -442,235 +442,6 @@
 				</div>
 				</a>
 			</div>
-			<div class="row products">
-				<div class="col-lg-6 proguct">
-					<div class="placeholder">
-						<div class="row">
-							<div class="like"></div>
-							<div class="bag"></div>
-						</div>
-					</div>
-
-					<div class="product-info">
-						<div class="name-of-product nav-margin-top50" >
-							Bonded Strappy Doll Dress
-						</div>
-						<div class="my-prise">
-							<span class="main-color-text">$79,99</span>
-							<span class="old-prise left-mar">$89,00</span>
-							<p><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/star.png"><img src="image/star.png"></p>
-							<p class="info-icons"><img src="image/weight.png"><img src="image/information.png" class="let-mar-inf"></p>
-						</div>
-					</div>
-
-				</div>
-				</a>
-				<a href="product.html">
-				<div class="col-lg-6 proguct">
-					<div class="placeholder">
-						<div class="row">
-							<div class="like"></div>
-							<div class="bag"></div>
-						</div>
-					</div>
-
-					<div class="product-info">
-						<div class="name-of-product nav-margin-top50" >
-							Bonded Strappy Doll Dress
-						</div>
-						<div class="my-prise">
-							<span class="main-color-text">$79,99</span>
-							<span class="old-prise left-mar">$89,00</span>
-							<p><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/star.png"><img src="image/star.png"></p>
-							<p class="info-icons"><img src="image/weight.png"><img src="image/information.png" class="let-mar-inf"></p>
-						</div>
-					</div>
-				</div>
-				</a>
-			</div>
-			<div class="row products">
-				<div class="col-lg-6 proguct">
-					<div class="placeholder">
-						<div class="row">
-							<div class="like"></div>
-							<div class="bag"></div>
-						</div>
-					</div>
-
-					<div class="product-info">
-						<div class="name-of-product nav-margin-top50" >
-							Bonded Strappy Doll Dress
-						</div>
-						<div class="my-prise">
-							<span class="main-color-text">$79,99</span>
-							<span class="old-prise left-mar">$89,00</span>
-							<p><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/star.png"><img src="image/star.png"></p>
-							<p class="info-icons"><img src="image/weight.png"><img src="image/information.png" class="let-mar-inf"></p>
-						</div>
-					</div>
-
-				</div>
-				</a>
-				<a href="product.html">
-				<div class="col-lg-6 proguct">
-					<div class="placeholder">
-						<div class="row">
-							<div class="like"></div>
-							<div class="bag"></div>
-						</div>
-					</div>
-
-					<div class="product-info">
-						<div class="name-of-product nav-margin-top50" >
-							Bonded Strappy Doll Dress
-						</div>
-						<div class="my-prise">
-							<span class="main-color-text">$79,99</span>
-							<span class="old-prise left-mar">$89,00</span>
-							<p><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/star.png"><img src="image/star.png"></p>
-							<p class="info-icons"><img src="image/weight.png"><img src="image/information.png" class="let-mar-inf"></p>
-						</div>
-					</div>
-				</div>
-				</a>
-			</div>
-			<div class="row products">
-				<div class="col-lg-6 proguct">
-					<div class="placeholder">
-						<div class="row">
-							<div class="like"></div>
-							<div class="bag"></div>
-						</div>
-					</div>
-
-					<div class="product-info">
-						<div class="name-of-product nav-margin-top50" >
-							Bonded Strappy Doll Dress
-						</div>
-						<div class="my-prise">
-							<span class="main-color-text">$79,99</span>
-							<span class="old-prise left-mar">$89,00</span>
-							<p><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/star.png"><img src="image/star.png"></p>
-							<p class="info-icons"><img src="image/weight.png"><img src="image/information.png" class="let-mar-inf"></p>
-						</div>
-					</div>
-
-				</div>
-				</a>
-				<a href="product.html">
-				<div class="col-lg-6 proguct">
-					<div class="placeholder">
-						<div class="row">
-							<div class="like"></div>
-							<div class="bag"></div>
-						</div>
-					</div>
-
-					<div class="product-info">
-						<div class="name-of-product nav-margin-top50" >
-							Bonded Strappy Doll Dress
-						</div>
-						<div class="my-prise">
-							<span class="main-color-text">$79,99</span>
-							<span class="old-prise left-mar">$89,00</span>
-							<p><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/star.png"><img src="image/star.png"></p>
-							<p class="info-icons"><img src="image/weight.png"><img src="image/information.png" class="let-mar-inf"></p>
-						</div>
-					</div>
-				</div>
-				</a>
-			</div>
-			<div class="row products">
-				<div class="col-lg-6 proguct">
-					<div class="placeholder">
-						<div class="row">
-							<div class="like"></div>
-							<div class="bag"></div>
-						</div>
-					</div>
-
-					<div class="product-info">
-						<div class="name-of-product nav-margin-top50" >
-							Bonded Strappy Doll Dress
-						</div>
-						<div class="my-prise">
-							<span class="main-color-text">$79,99</span>
-							<span class="old-prise left-mar">$89,00</span>
-							<p><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/star.png"><img src="image/star.png"></p>
-							<p class="info-icons"><img src="image/weight.png"><img src="image/information.png" class="let-mar-inf"></p>
-						</div>
-					</div>
-
-				</div>
-				</a>
-				<a href="product.html">
-				<div class="col-lg-6 proguct">
-					<div class="placeholder">
-						<div class="row">
-							<div class="like"></div>
-							<div class="bag"></div>
-						</div>
-					</div>
-
-					<div class="product-info">
-						<div class="name-of-product nav-margin-top50" >
-							Bonded Strappy Doll Dress
-						</div>
-						<div class="my-prise">
-							<span class="main-color-text">$79,99</span>
-							<span class="old-prise left-mar">$89,00</span>
-							<p><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/star.png"><img src="image/star.png"></p>
-							<p class="info-icons"><img src="image/weight.png"><img src="image/information.png" class="let-mar-inf"></p>
-						</div>
-					</div>
-				</div>
-				</a>
-			</div>
-			<div class="row products">
-				<div class="col-lg-6 proguct">
-					<div class="placeholder">
-						<div class="row">
-							<div class="like"></div>
-							<div class="bag"></div>
-						</div>
-					</div>
-
-					<div class="product-info">
-						<div class="name-of-product nav-margin-top50" >
-							Bonded Strappy Doll Dress
-						</div>
-						<div class="my-prise">
-							<span class="main-color-text">$79,99</span>
-							<span class="old-prise left-mar">$89,00</span>
-							<p><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/star.png"><img src="image/star.png"></p>
-							<p class="info-icons"><img src="image/weight.png"><img src="image/information.png" class="let-mar-inf"></p>
-						</div>
-					</div>
-
-				</div>
-				</a>
-				<a href="product.html">
-				<div class="col-lg-6 proguct">
-					<div class="placeholder">
-						<div class="row">
-							<div class="like"></div>
-							<div class="bag"></div>
-						</div>
-					</div>
-
-					<div class="product-info">
-						<div class="name-of-product nav-margin-top50" >
-							Bonded Strappy Doll Dress
-						</div>
-						<div class="my-prise">
-							<span class="main-color-text">$79,99</span>
-							<span class="old-prise left-mar">$89,00</span>
-							<p><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/star.png"><img src="image/star.png"></p>
-							<p class="info-icons"><img src="image/weight.png"><img src="image/information.png" class="let-mar-inf"></p>
-						</div>
-					</div>
-				</div>
-				</a>
 			</div>
 		</a>
 		</div>

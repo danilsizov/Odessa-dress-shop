@@ -139,7 +139,7 @@
 
 		</div>
 		<div class="col-lg-10">
-		<img src="image/pagination.png" width="100%" class="bot-line padding-bot">
+		<img src="image/Pagination.png" width="100%" class="bot-line padding-bot">
 		<div class="row">
 			<img src="image/grid.png" class="nav-margin-top25 float-left-my"><img src="image/list.png" class="nav-margin-top25 let-mar-inf float-left-my">
 			<a href="drop.php"><div class="but-popular accent-color nav-margin-top text-center float-right-arrow"> Дроп Шоппинг

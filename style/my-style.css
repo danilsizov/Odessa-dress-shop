@@ -1,3 +1,28 @@
+#top-search-form {
+	display: inline-block;
+	width: 200px;
+	height: 18px;
+	margin: 0; 
+	margin-right: 10px;
+}
+#top-search-form #topsearch-btn {
+	float: right;
+	width: 24px;
+	background: transparent;
+	padding: 0;
+	display: block;
+	margin-left: 200px;
+}
+#top-searchbox {
+	background: transparent;
+	color: black;
+	width:200px;	
+	border-bottom: 1.3px solid black !important;
+	padding: 3px;
+	float: left;
+	display: block;
+	font-size: 14px;
+}
 a
 {
 	text-decoration: none;

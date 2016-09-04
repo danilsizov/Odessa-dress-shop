@@ -8,8 +8,14 @@
 		
 		<div class="col-lg-10">
 			<div class="row">
-
-				<img src="image/search.png" width="24px"> | <a href="my-order.php" class="but-nav-top accent-text-color"><strong>Моя корзина</strong></a><img src="image/shop_cart.png" width="20px">
+				<form action="search.php" method='post' id='top-search-form'>	
+					<input type="text" id="top-searchbox" name='query'>
+					<input type='image' src="image/search.png" id="topsearch-btn">
+				</form>
+				| <a href="my-order.php" class="but-nav-top accent-text-color">
+					<strong>Моя корзина</strong>
+				</a>
+				<img src="image/shop_cart.png" width="20px">
 
 				<span class="float-right text-right">
 				<a href="sign-in.php" class="but-nav-top accent-text-color">Войти</a>
@@ -35,7 +41,7 @@
 	</div>
 	<div class="col-lg-10">
 		<div class="my-middle-text accent-text-color my-nav">
-				<ul class="menu">
+			<ul class="menu">
 			    <li><a href="index.php" class="but-nav-top40 accent-text-color"><strong>Главная</strong></a>
 			    </li>
 			    <li><a href="shop.php" class="but-nav-top40 accent-text-color"><strong>Каталог</strong></a>

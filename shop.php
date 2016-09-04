@@ -1,4 +1,3 @@
-<?php require_once "lib/templates.php"; ?>
 <html>
 <head>
 
@@ -22,7 +21,70 @@
 
 </head>
 <body>
-<?php echo getHeaderTemplate(); ?>
+<div class="container">
+	<div class="row my-small-text accent-text-color nav-margin-top bot-line nav-padding">
+
+<div class="col-lg-2">
+		<img src="image/black.png" width="85%">
+</div>
+	<div class="col-lg-10">
+		
+		<div class="col-lg-10">
+			<div class="row">
+
+				<img src="image/search.png" width="24px"> | <a href="my-order.html" class="but-nav-top accent-text-color"><strong>Моя корзина</strong></a><img src="image/shop_cart.png" width="20px">
+
+				<span class="float-right text-right">
+				<a href="sign-in.html" class="but-nav-top accent-text-color">Войти</a>
+				<a href="#" class="but-nav-top accent-text-color dropmy" onclick="myMoneyFunction()">UAH</a>
+				<div id="Money" class="dropdown-content ">
+				    <a href="#">UAH 1грн=1грн</a>
+				    <a href="#">USD 1грн=25дол.</a>
+				    <a href="#">EUR 1грн=27евро</a>
+				</div>
+				<a href="#" class="but-nav-top accent-text-color dropmy " onclick="myLanguageFunction()"><img src="http://www.iconsearch.ru/ajax/download.php?icon_id=42915&size=1&format=ico"></a>
+				<div id="Language" class="dropdown-content let-mar-prod-new">
+				    <a href="#"><img src="http://www.iconsearch.ru/ajax/download.php?icon_id=42915&size=1&format=ico"> Русский</a>
+				    <a href="#"><img src="http://abali.ru/wp-content/uploads/2010/12/united-states-flag-16x16.png"> English</a>
+				    <a href="#"><img src="http://abali.ru/wp-content/uploads/2010/12/ukraine-flag-16x16.png"> Український</a>
+				</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+	<div class="col-lg-2">
+	</div>
+	<div class="col-lg-10">
+		<div class="my-middle-text accent-text-color my-nav">
+				<ul class="menu">
+			    <li><a href="index.html" class="but-nav-top40 accent-text-color"><strong>Главная</strong></a>
+			    </li>
+			    <li><a href="shop.html" class="but-nav-top40 accent-text-color"><strong>Каталог</strong></a>
+			    </li>
+			    <li><a href="shop.html" class="but-nav-top40 accent-text-color"><strong>Сотрудничество</strong></a>
+			    </li>
+			    <li><a href="#" class="but-nav-top40 accent-text-color"><strong>Контакты</strong></a>
+			        
+			    </li>
+    <li><a href="#" class="but-nav-top40 accent-text-color"><strong>Помощь</strong></a>
+        <ul class="submenu main-color">
+            <li><a href=#>Доставка</a></li>
+            <li><a href=#>Оплата</a></li>
+            <li><a href=#>Контакты</a></li>
+            <li><a href=#>Выбрать размер</a></li>
+            <li><a href=#>Частые вопросы</a></li>
+            <li><a href=#>О нас</a></li>
+            <li><a href=#>Скачать</a></li>
+            <li><a href=#>Условия опта</a></li>
+        </ul>
+    </li>
+    </ul>
+				</div>
+		</div>
+	</div>
+</div>
+</div>
 <div class="row nav-margin-top50">
 	<div class="small-line"><strong>Главная</strong></div><div class="black-box"><strong>Каталог</strong></div>
 </div>
@@ -57,68 +119,109 @@
 				<p class="title-cotolog"><strong>РАЗМЕР</strong><img src="image/arrow-down.png" class="float-right-arrow" ></p>
 			</div>
 			<div class="row nav-margin-top">
-				<label>
-				<p class="categories"><input class="checkbox" type="checkbox" name="checkbox-test">
-				    <span class="checkbox-custom"></span>
-				    <span class="label categories">XS</span>
-				</label></p>
-				<p class="categories"><input class="checkbox" type="checkbox" name="checkbox-test">
-				    <span class="checkbox-custom"></span>
-				    <span class="label categories">SM</span>
-				</label></p><p class="categories"><input class="checkbox" type="checkbox" name="checkbox-test">
-				    <span class="checkbox-custom"></span>
-				    <span class="label categories">MED</span>
-				</label></p><p class="categories"><input class="checkbox" type="checkbox" name="checkbox-test">
-				    <span class="checkbox-custom"></span>
-				    <span class="label categories">LG</span>
-				</label></p><p class="categories"><input class="checkbox" type="checkbox" name="checkbox-test">
-				    <span class="checkbox-custom"></span>
-				    <span class="label categories">XL</span>
-				</label></p><p class="categories"><input class="checkbox" type="checkbox" name="checkbox-test">
-				    <span class="checkbox-custom"></span>
-				    <span class="label categories">XXL</span>
-				</label></p>
-				<p class="categories"><input class="checkbox" type="checkbox" name="checkbox-test">
-				    <span class="checkbox-custom"></span>
-				    <span class="label categories">S/M</span>
-				</label></p><p class="categories"><input class="checkbox" type="checkbox" name="checkbox-test">
-				    <span class="checkbox-custom"></span>
-				    <span class="label categories">M/L</span>
-				</label></p>
+				<div onclick="chooseThisSize(1)">
+					<label>
+					<p class="categories"><input class="checkbox left-float-size" type="checkbox" name="checkbox-test">
+					    <span class="checkbox-custom"></span>
+					    <span class="label categories">XS</span>
+					</p>
+					</label>
+				</div>
+				<div onclick="chooseThisSize(2)">
+					<label>
+					<p class="categories"><input class="checkbox left-float-size" type="checkbox" name="checkbox-test">
+					    <span class="checkbox-custom"></span>
+					    <span class="label categories">M</span>
+					</p>
+					</label>
+				</div>
+				<div onclick="chooseThisSize(3)">
+					<label>
+					<p class="categories"><input class="checkbox left-float-size" type="checkbox" name="checkbox-test">
+					    <span class="checkbox-custom"></span>
+					    <span class="label categories">L</span>
+					</p>
+					</label>
+				</div>
+				<div onclick="chooseThisSize(4)">
+					<label>
+					<p class="categories"><input class="checkbox left-float-size" type="checkbox" name="checkbox-test">
+					    <span class="checkbox-custom"></span>
+					    <span class="label categories">XL</span>
+					</p>
+					</label>
+				</div>
+				<div onclick="chooseThisSize(5,6)">
+					<label>
+					<p class="categories"><input class="checkbox left-float-size" type="checkbox" name="checkbox-test">
+					    <span class="checkbox-custom"></span>
+					    <span class="label categories">XXL</span>
+					</p>
+					</label>
+				</div>
+
+
 			</div>
 
 			<div class="row bot-line nav-margin-top">
 				<p class="title-cotolog"><strong>ЦВЕТ</strong></p>
 			</div>
 			<div class="row nav-margin-top">
-				<p class="categories"><label>
-				<input class="checkbox" type="checkbox" name="checkbox-test">
-				    <span class="checkbox-custom"></span>
-				    <span class="label categories"><img src="image/white-color.png" class="float-left-my" > Белый</span>
-				</label></p>
-				<p class="categories"><input class="checkbox" type="checkbox" name="checkbox-test">
-				    <span class="checkbox-custom"></span>
-				    <span class="label categories"><img src="image/grey.png" class="float-left-my" > Серый</span>
-				</label></p><p class="categories"><input class="checkbox" type="checkbox" name="checkbox-test">
-				    <span class="checkbox-custom"></span>
-				    <span class="label categories"><img src="image/red.png" class="float-left-my" > Красный</span>
-				</label></p><p class="categories"><input class="checkbox" type="checkbox" name="checkbox-test">
-				    <span class="checkbox-custom"></span>
-				    <span class="label categories"><img src="image/green.png" class="float-left-my" >Зелённый</span>
-				</label></p><p class="categories"><input class="checkbox" type="checkbox" name="checkbox-test">
-				    <span class="checkbox-custom"></span>
-				    <span class="label categories"><img src="image/blue.png" class="float-left-my" >Синий</span>
-				</label></p><p class="categories"><input class="checkbox" type="checkbox" name="checkbox-test">
-				    <span class="checkbox-custom"></span>
-				    <span class="label categories"><img src="image/brown.png" class="float-left-my">Коричневый</span>
-				</label></p>
-				<p class="categories"><input class="checkbox" type="checkbox" name="checkbox-test">
-				    <span class="checkbox-custom"></span>
-				    <span class="label categories"><img src="image/black-color.png" class="float-left-my" >Чёрный</span>
-				</label></p><p class="categories"><input class="checkbox" type="checkbox" name="checkbox-test">
-				    <span class="checkbox-custom"></span>
-				    <span class="label categories"><img src="image/pink.png" class="float-left-my" >Розовый</span>
-				</label></p>
+
+				<p class="categories">
+					<label onclick="chooseThisSize(1)"">
+					<input class="checkbox" type="checkbox" name="checkbox-test">
+					    <span class="checkbox-custom"></span>
+					    <span class="label categories"><img src="image/white-color.png" class="float-left-my" > Белый</span>
+					</label>
+				</p>
+				<p class="categories">
+					<label onclick="chooseThisSize(2)">
+						<input class="checkbox" type="checkbox" name="checkbox-test">
+					    <span class="checkbox-custom"></span>
+				    	<span class="label categories">
+				    	<img src="image/grey.png" class="float-left-my" > Серый</span>
+					</label>
+				</p>
+				<p class="categories">
+					<label onclick="chooseThisSize(3)">
+						<input class="checkbox" type="checkbox" name="checkbox-test">
+					    <span class="checkbox-custom"></span>
+					    <span class="label categories">
+					    <img src="image/red.png" class="float-left-my" > Красный</span>
+					</label>
+				</p>
+				<p class="categories">
+					<label onclick="chooseThisSize(4)">
+						<input class="checkbox" type="checkbox" name="checkbox-test">
+				    	<span class="checkbox-custom"></span>
+				    	<span class="label categories">
+				    	<img src="image/green.png" class="float-left-my" >Зелённый</span>
+					</label>
+				</p>
+				<p class="categories">
+					<label onclick="chooseThisSize(5)">
+						<input class="checkbox" type="checkbox" name="checkbox-test">
+					    <span class="checkbox-custom"></span>
+					    <span class="label categories">
+					    <img src="image/blue.png" class="float-left-my" >Синий</span>
+					</label>
+				</p>
+				<p class="categories">
+					<label onclick="chooseThisSize(6)">
+						<input class="checkbox" type="checkbox" name="checkbox-test">
+					    <span class="checkbox-custom"></span>
+					    <span class="label categories">
+					   	<img src="image/brown.png" class="float-left-my">Коричневый</span>
+					</label>
+				</p>
+				<p class="categories">
+					<label onclick="chooseThisSize(3)">
+						<input class="checkbox" type="checkbox" name="checkbox-test">
+					    <span class="checkbox-custom"></span>
+					    <span class="label categories">
+					    <img src="image/black-color.png" class="float-left-my" >Чёрный</span>
+					</label>
 			</div>
 			<div class="row bot-line">
 				<p class="title-cotolog"><strong>ЦЕНА</strong><img src="image/arrow-down.png" class="float-right-arrow" ></p>
@@ -139,19 +242,42 @@
 
 		</div>
 		<div class="col-lg-10">
-		<img src="image/Pagination.png" width="100%" class="bot-line padding-bot">
+		<img src="image/pagination.png" width="100%" class="bot-line padding-bot">
 		<div class="row">
 			<img src="image/grid.png" class="nav-margin-top25 float-left-my"><img src="image/list.png" class="nav-margin-top25 let-mar-inf float-left-my">
-			<a href="drop.php"><div class="but-popular accent-color nav-margin-top text-center float-right-arrow"> Дроп Шоппинг
+			<a href="drop.html"><div class="but-popular accent-color nav-margin-top text-center float-right-arrow"> Дроп Шоппинг
 			</div></a>
 			<div class="but-popular main-color nav-margin-top text-center float-right-arrow"> Скачать каталог
 			</div>
 
 		</div>
-<a href="product.php">
-			<div class="row products">
+		<div class="row products">
+			<a href="product.php" id="dress1">
 				<div class="col-lg-6 proguct">
 					<div class="placeholder">
+						<div class="row">
+							<div class="like"></div>
+							<div class="bag"></div>
+						</div>
+					</div>
+						
+					<div class="product-info">
+						<div class="name-of-product nav-margin-top50" >
+							Розовое платье
+						</div>
+						<div class="my-prise">
+							<span class="main-color-text">600 UAH</span>
+							<span class="old-prise left-mar">800 UAH</span>
+							<p><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/star.png"><img src="image/star.png"></p>
+							<p class="info-icons"><img src="image/weight.png"><img src="image/information.png" class="let-mar-inf"></p>
+						</div>
+					</div>
+					</div>
+				</a>
+
+			<a href="product.php" id="dress2">
+				<div class="col-lg-6 proguct">
+					<div class="placeholder1">
 						<div class="row">
 							<div class="like"></div>
 							<div class="bag"></div>
@@ -160,21 +286,24 @@
 
 					<div class="product-info">
 						<div class="name-of-product nav-margin-top50" >
-							Bonded Strappy Doll Dress
+							 Красивое платье
 						</div>
 						<div class="my-prise">
-							<span class="main-color-text">$79,99</span>
-							<span class="old-prise left-mar">$89,00</span>
+							<span class="main-color-text">600 UAH</span>
+							<span class="old-prise left-mar">800 UAH</span>
 							<p><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/star.png"><img src="image/star.png"></p>
 							<p class="info-icons"><img src="image/weight.png"><img src="image/information.png" class="let-mar-inf"></p>
 						</div>
 					</div>
-
 				</div>
-				</a>
-				<a href="product.php">
+			</a>
+		</div>
+
+
+		<div class="row products">
+			<a href="product.php" id="dress3">
 				<div class="col-lg-6 proguct">
-					<div class="placeholder">
+					<div class="placeholder2">
 						<div class="row">
 							<div class="like"></div>
 							<div class="bag"></div>
@@ -183,205 +312,91 @@
 
 					<div class="product-info">
 						<div class="name-of-product nav-margin-top50" >
-							Bonded Strappy Doll Dress
+							Прекрасное платье
 						</div>
 						<div class="my-prise">
-							<span class="main-color-text">$79,99</span>
-							<span class="old-prise left-mar">$89,00</span>
+							<span class="main-color-text">600 UAH</span>
+							<span class="old-prise left-mar">800 UAH</span>
 							<p><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/star.png"><img src="image/star.png"></p>
 							<p class="info-icons"><img src="image/weight.png"><img src="image/information.png" class="let-mar-inf"></p>
 						</div>
 					</div>
 				</div>
 				</a>
+
+			<a href="product.php" id="dress4">
+				<div class="col-lg-6 proguct">
+					<div class="placeholder3">
+						<div class="row">
+							<div class="like"></div>
+							<div class="bag"></div>
+						</div>
+					</div>
+
+					<div class="product-info">
+						<div class="name-of-product nav-margin-top50" >
+							Великолепное платье
+						</div>
+						<div class="my-prise">
+							<span class="main-color-text">600 UAH</span>
+							<span class="old-prise left-mar">800 UAH</span>
+							<p><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/star.png"><img src="image/star.png"></p>
+							<p class="info-icons"><img src="image/weight.png"><img src="image/information.png" class="let-mar-inf"></p>
+						</div>
+					</div>
+				</div>
+			</a>
+		</div>
+
+		<div class="row products">
+			<a href="product.php" id="dress5">
+				<div class="col-lg-6 proguct">
+					<div class="placeholder4">
+						<div class="row">
+							<div class="like"></div>
+							<div class="bag"></div>
+						</div>
+					</div>
+
+					<div class="product-info">
+						<div class="name-of-product nav-margin-top50" >
+							Оболденное патье
+						</div>
+						<div class="my-prise">
+							<span class="main-color-text">600 UAH</span>
+							<span class="old-prise left-mar">800 UAH</span>
+							<p><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/star.png"><img src="image/star.png"></p>
+							<p class="info-icons"><img src="image/weight.png"><img src="image/information.png" class="let-mar-inf"></p>
+						</div>
+					</div>
+				</div>
+			</a>
+
+			<a href="product.php" id="dress6">
+				<div class="col-lg-6 proguct">
+					<div class="placeholder5">
+						<div class="row">
+							<div class="like"></div>
+							<div class="bag"></div>
+						</div>
+					</div>
+
+					<div class="product-info">
+						<div class="name-of-product nav-margin-top50" >
+							Невообразимое платье
+						</div>
+						<div class="my-prise">
+							<span class="main-color-text">600 UAH</span>
+							<span class="old-prise left-mar">800 UAH</span>
+							<p><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/star.png"><img src="image/star.png"></p>
+							<p class="info-icons"><img src="image/weight.png"><img src="image/information.png" class="let-mar-inf"></p>
+						</div>
+					</div>
+				</div>	
+			</a>
+		</div>
+				
 			</div>
-
-			<div class="row products">
-				<div class="col-lg-6 proguct">
-					<div class="placeholder">
-						<div class="row">
-							<div class="like"></div>
-							<div class="bag"></div>
-						</div>
-					</div>
-
-					<div class="product-info">
-						<div class="name-of-product nav-margin-top50" >
-							Bonded Strappy Doll Dress
-						</div>
-						<div class="my-prise">
-							<span class="main-color-text">$79,99</span>
-							<span class="old-prise left-mar">$89,00</span>
-							<p><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/star.png"><img src="image/star.png"></p>
-							<p class="info-icons"><img src="image/weight.png"><img src="image/information.png" class="let-mar-inf"></p>
-						</div>
-					</div>
-
-				</div>
-				</a>
-				<a href="product.php">
-				<div class="col-lg-6 proguct">
-					<div class="placeholder">
-						<div class="row">
-							<div class="like"></div>
-							<div class="bag"></div>
-						</div>
-					</div>
-
-					<div class="product-info">
-						<div class="name-of-product nav-margin-top50" >
-							Bonded Strappy Doll Dress
-						</div>
-						<div class="my-prise">
-							<span class="main-color-text">$79,99</span>
-							<span class="old-prise left-mar">$89,00</span>
-							<p><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/star.png"><img src="image/star.png"></p>
-							<p class="info-icons"><img src="image/weight.png"><img src="image/information.png" class="let-mar-inf"></p>
-						</div>
-					</div>
-				</div>
-				</a>
-			</div>
-			<div class="row products">
-				<div class="col-lg-6 proguct">
-					<div class="placeholder">
-						<div class="row">
-							<div class="like"></div>
-							<div class="bag"></div>
-						</div>
-					</div>
-
-					<div class="product-info">
-						<div class="name-of-product nav-margin-top50" >
-							Bonded Strappy Doll Dress
-						</div>
-						<div class="my-prise">
-							<span class="main-color-text">$79,99</span>
-							<span class="old-prise left-mar">$89,00</span>
-							<p><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/star.png"><img src="image/star.png"></p>
-							<p class="info-icons"><img src="image/weight.png"><img src="image/information.png" class="let-mar-inf"></p>
-						</div>
-					</div>
-
-				</div>
-				</a>
-				<a href="product.php">
-				<div class="col-lg-6 proguct">
-					<div class="placeholder">
-						<div class="row">
-							<div class="like"></div>
-							<div class="bag"></div>
-						</div>
-					</div>
-
-					<div class="product-info">
-						<div class="name-of-product nav-margin-top50" >
-							Bonded Strappy Doll Dress
-						</div>
-						<div class="my-prise">
-							<span class="main-color-text">$79,99</span>
-							<span class="old-prise left-mar">$89,00</span>
-							<p><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/star.png"><img src="image/star.png"></p>
-							<p class="info-icons"><img src="image/weight.png"><img src="image/information.png" class="let-mar-inf"></p>
-						</div>
-					</div>
-				</div>
-				</a>
-			</div>
-			<div class="row products">
-				<div class="col-lg-6 proguct">
-					<div class="placeholder">
-						<div class="row">
-							<div class="like"></div>
-							<div class="bag"></div>
-						</div>
-					</div>
-
-					<div class="product-info">
-						<div class="name-of-product nav-margin-top50" >
-							Bonded Strappy Doll Dress
-						</div>
-						<div class="my-prise">
-							<span class="main-color-text">$79,99</span>
-							<span class="old-prise left-mar">$89,00</span>
-							<p><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/star.png"><img src="image/star.png"></p>
-							<p class="info-icons"><img src="image/weight.png"><img src="image/information.png" class="let-mar-inf"></p>
-						</div>
-					</div>
-
-				</div>
-				</a>
-				<a href="product.php">
-				<div class="col-lg-6 proguct">
-					<div class="placeholder">
-						<div class="row">
-							<div class="like"></div>
-							<div class="bag"></div>
-						</div>
-					</div>
-
-					<div class="product-info">
-						<div class="name-of-product nav-margin-top50" >
-							Bonded Strappy Doll Dress
-						</div>
-						<div class="my-prise">
-							<span class="main-color-text">$79,99</span>
-							<span class="old-prise left-mar">$89,00</span>
-							<p><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/star.png"><img src="image/star.png"></p>
-							<p class="info-icons"><img src="image/weight.png"><img src="image/information.png" class="let-mar-inf"></p>
-						</div>
-					</div>
-				</div>
-				</a>
-			</div>
-			<div class="row products">
-				<div class="col-lg-6 proguct">
-					<div class="placeholder">
-						<div class="row">
-							<div class="like"></div>
-							<div class="bag"></div>
-						</div>
-					</div>
-
-					<div class="product-info">
-						<div class="name-of-product nav-margin-top50" >
-							Bonded Strappy Doll Dress
-						</div>
-						<div class="my-prise">
-							<span class="main-color-text">$79,99</span>
-							<span class="old-prise left-mar">$89,00</span>
-							<p><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/star.png"><img src="image/star.png"></p>
-							<p class="info-icons"><img src="image/weight.png"><img src="image/information.png" class="let-mar-inf"></p>
-						</div>
-					</div>
-
-				</div>
-				</a>
-				<a href="product.php">
-				<div class="col-lg-6 proguct">
-					<div class="placeholder">
-						<div class="row">
-							<div class="like"></div>
-							<div class="bag"></div>
-						</div>
-					</div>
-
-					<div class="product-info">
-						<div class="name-of-product nav-margin-top50" >
-							Bonded Strappy Doll Dress
-						</div>
-						<div class="my-prise">
-							<span class="main-color-text">$79,99</span>
-							<span class="old-prise left-mar">$89,00</span>
-							<p><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/star.png"><img src="image/star.png"></p>
-							<p class="info-icons"><img src="image/weight.png"><img src="image/information.png" class="let-mar-inf"></p>
-						</div>
-					</div>
-				</div>
-				</a>
-			</div>
-			</div>
-		</a>
 		</div>
 	</div>
 </div>

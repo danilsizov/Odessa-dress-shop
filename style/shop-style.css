@@ -92,6 +92,27 @@
     vertical-align: middle;
 }
 
+.checkbox1 {
+    display: none;
+}
+
+
+.checkbox-custom1 {
+    position: relative;      /* Обязательно задаем, чтобы мы могли абсолютным образом позиционировать псевдоэлемент внютри нашего кастомного чекбокса */
+    width: 20px;             /* Обязательно задаем ширину */
+    height: 20px;            /* Обязательно задаем высоту */
+    border: 2px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Кастомный чекбокс и лейбл центрируем по вертикали. Если вам это не требуется, то вы можете убрать свойство vertical-align: middle из данного правила, но свойство display: inline-block обязательно должно быть */
+.checkbox-custom1,
+.label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
 .label{
 	padding-left: 5px;
 	margin-left: 0;
@@ -116,6 +137,22 @@
     background: #413548;     /* Добавляем фон. Если требуется, можете поставить сюда картинку в виде "галочки", которая будет символизировать, что чекбокс отмечен */
     border-radius: 2px;
 }
+
+.checkbox1:checked + .checkbox-custom1::before {
+    content: "";             /* Добавляем наш псевдоэлемент */
+    display: block;          /* Делаем его блочным элементом */
+    position: absolute;      /* Позиционируем его абсолютным образом */
+
+    /* Задаем расстояние от верхней, правой, нижней и левой границы */
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+
+    background: #413548;     /* Добавляем фон. Если требуется, можете поставить сюда картинку в виде "галочки", которая будет символизировать, что чекбокс отмечен */
+    border-radius: 2px;
+}
+
 
 .padding-bot
 {
@@ -179,6 +216,7 @@
 	width: 450px;
 	background:url(../image/dress-new.jpg);
 	background-size: 100% 100%;
+	float: left;
 }
 
 .placeholder .row div{
@@ -206,6 +244,187 @@
 }
 
 .placeholder:hover .row .bag:hover{
+	background-color: #f88496;
+	background-image: url(../image/bag1.png);
+}
+
+.placeholder1{
+	height: 600px;
+	width: 450px;
+	background:url(../image/dress2.jpg);
+	background-size: 100% 100%;
+	
+}
+
+.placeholder1 .row div{
+	display: none;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	background-color: white;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.placeholder1:hover{
+	background-color: #f9e3e7;
+	cursor: pointer;
+}
+
+.placeholder1:hover .row div{
+	display: block;
+}
+
+.placeholder1:hover .row .like:hover{
+	background-color: #f88496;
+	background-image: url(../image/like-ico2.png);
+}
+
+.placeholder1:hover .row .bag:hover{
+	background-color: #f88496;
+	background-image: url(../image/bag1.png);
+}
+
+.placeholder2{
+	height: 600px;
+	width: 450px;
+	background:url(../image/dress-black.jpg);
+	background-size: 100% 100%;
+}
+
+.placeholder2 .row div{
+	display: none;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	background-color: white;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.placeholder2:hover{
+	background-color: #f9e3e7;
+	cursor: pointer;
+}
+
+.placeholder2:hover .row div{
+	display: block;
+}
+
+.placeholder2:hover .row .like:hover{
+	background-color: #f88496;
+	background-image: url(../image/like-ico2.png);
+}
+
+.placeholder2:hover .row .bag:hover{
+	background-color: #f88496;
+	background-image: url(../image/bag1.png);
+}
+
+.placeholder3{
+	height: 600px;
+	width: 450px;
+	background:url(../image/dress-brain.jpg);
+	background-size: 100% 100%;
+}
+
+.placeholder3 .row div{
+	display: none;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	background-color: white;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.placeholder3:hover{
+	background-color: #f9e3e7;
+	cursor: pointer;
+}
+
+.placeholder3:hover .row div{
+	display: block;
+}
+
+.placeholder3:hover .row .like:hover{
+	background-color: #f88496;
+	background-image: url(../image/like-ico2.png);
+}
+
+.placeholder3:hover .row .bag:hover{
+	background-color: #f88496;
+	background-image: url(../image/bag1.png);
+}
+
+.placeholder4{
+	height: 600px;
+	width: 450px;
+	background:url(../image/dress-2.jpg);
+	background-size: 100% 100%;
+}
+
+.placeholder4 .row div{
+	display: none;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	background-color: white;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.placeholder4:hover{
+	background-color: #f9e3e7;
+	cursor: pointer;
+}
+
+.placeholder4:hover .row div{
+	display: block;
+}
+
+.placeholder4:hover .row .like:hover{
+	background-color: #f88496;
+	background-image: url(../image/like-ico2.png);
+}
+
+.placeholder4:hover .row .bag:hover{
+	background-color: #f88496;
+	background-image: url(../image/bag1.png);
+}
+
+.placeholder5{
+	height: 600px;
+	width: 450px;
+	background:url(../image/dress3.jpg);
+	background-size: 100% 100%;
+}
+
+.placeholder5 .row div{
+	display: none;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	background-color: white;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.placeholder5:hover{
+	background-color: #f9e3e7;
+	cursor: pointer;
+}
+
+.placeholder5:hover .row div{
+	display: block;
+}
+
+.placeholder5:hover .row .like:hover{
+	background-color: #f88496;
+	background-image: url(../image/like-ico2.png);
+}
+
+.placeholder5:hover .row .bag:hover{
 	background-color: #f88496;
 	background-image: url(../image/bag1.png);
 }
@@ -240,4 +459,12 @@
 
 .prise-slider{
 	margin-top: 50px;
+}
+
+
+
+
+.left-float-size
+{
+	float:left;
 }

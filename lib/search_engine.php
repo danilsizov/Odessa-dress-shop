@@ -21,7 +21,7 @@
 		foreach ($all_products as $key => $value) {
 			// print_var($value);
 			if(!preg_match("/^$query/", $value["name"])){
-				echo "^$query";
+				//echo "^$query";
 				unset($all_products[$key]);
 			}
 		}

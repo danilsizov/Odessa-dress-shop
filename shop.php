@@ -195,7 +195,7 @@
 			
 			 <?php 
 			 	if(isset($_GET['query']) && $_GET['query'] != ''){
-			 		echo "yes";
+			 		//echo "yes";
 		 			echo getCatalog(searchTempDB($_GET['query'])); 
 		 		}else
 			 		echo getCatalog(); 

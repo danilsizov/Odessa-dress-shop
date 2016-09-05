@@ -10,3 +10,23 @@ $(document).ready(function(){
 		}
 	});
 });
+
+function chooseThisSize(resevedDress)
+{
+	var otherDress=0;
+	var myDress=0;
+	for(var i = 1;i<=6; i++)
+	{
+		if(i!=resevedDress)
+		{
+			otherDress=document.getElementById('dress'+i+'');
+			otherDress.style.display='none';
+		}
+		else
+		{
+			myDress=document.getElementById('dress'+i+ '')
+			myDress.style.display='block';
+		}
+
+	}
+}

@@ -1,5 +1,6 @@
 <?php
 	require_once 'utils.php';
+
 	define("TEMPLATES_DIR", dirname(__FILE__)."/templates/");
 
 	function getTemplate($name, $search = false){
@@ -17,23 +18,8 @@
 		return getTemplate('header');
 	}
 	function getCatalog(){
-		$products = getBalancedProducts(array(
-				array(
-					'id' => 1,
-					'name' => 'black dress',
-					'price' => 80,
-					'last_price' => 90 ),
-				array(
-					'id' => 2,
-					'name' => 'blue dress',
-					'price' => 80,
-					'last_price' => 90 ),
-				array(
-					'id' => 3,
-					'name' => 'red dress',
-					'price' => 80,
-					'last_price' => 90 ),
-			));
+		include 'temp_db.php';
+		$products = getBalancedProducts($all_products);
 		$text = "";
 		for ($i = 0; $i < count($products); $i+=2) { 
 			$text .= getCatalogPair(

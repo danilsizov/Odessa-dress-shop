@@ -1,4 +1,4 @@
-	<a href="product.php?id=<%id%>">
+	<a href="product.php?id=<%id%>" id="dress<%id%>">
 		<div class="col-lg-6 proguct">
 			<div class="placeholder">
 				<div class="row">
@@ -12,8 +12,8 @@
 					<%name%>
 				</div>
 				<div class="my-prise">
-					<span class="main-color-text"><%price%></span>
-					<span class="old-prise left-mar"><%last_price%></span>
+					<span class="main-color-text"><%price%> UAH</span>
+					<span class="old-prise left-mar"><%last_price%> UAH</span>
 					<p><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/star.png"><img src="image/star.png"></p>
 					<p class="info-icons"><img src="image/weight.png"><img src="image/information.png" class="let-mar-inf"></p>
 				</div>

@@ -1,4 +1,5 @@
-<?php require_once "lib/templates.php"; ?>
+<?php require_once 'lib/templates.php';?>
+<?php header('Content-Type: text/html; charset=utf-8', true); ?>
 <html>
 <head>
 
@@ -23,6 +24,7 @@
 </head>
 <body>
 <?php echo getHeaderTemplate(); ?>
+</div>
 <div class="row nav-margin-top50">
 	<div class="small-line"><strong>Главная</strong></div><div class="black-box"><strong>Каталог</strong></div>
 </div>
@@ -57,68 +59,109 @@
 				<p class="title-cotolog"><strong>РАЗМЕР</strong><img src="image/arrow-down.png" class="float-right-arrow" ></p>
 			</div>
 			<div class="row nav-margin-top">
-				<label>
-				<p class="categories"><input class="checkbox" type="checkbox" name="checkbox-test">
-				    <span class="checkbox-custom"></span>
-				    <span class="label categories">XS</span>
-				</label></p>
-				<p class="categories"><input class="checkbox" type="checkbox" name="checkbox-test">
-				    <span class="checkbox-custom"></span>
-				    <span class="label categories">SM</span>
-				</label></p><p class="categories"><input class="checkbox" type="checkbox" name="checkbox-test">
-				    <span class="checkbox-custom"></span>
-				    <span class="label categories">MED</span>
-				</label></p><p class="categories"><input class="checkbox" type="checkbox" name="checkbox-test">
-				    <span class="checkbox-custom"></span>
-				    <span class="label categories">LG</span>
-				</label></p><p class="categories"><input class="checkbox" type="checkbox" name="checkbox-test">
-				    <span class="checkbox-custom"></span>
-				    <span class="label categories">XL</span>
-				</label></p><p class="categories"><input class="checkbox" type="checkbox" name="checkbox-test">
-				    <span class="checkbox-custom"></span>
-				    <span class="label categories">XXL</span>
-				</label></p>
-				<p class="categories"><input class="checkbox" type="checkbox" name="checkbox-test">
-				    <span class="checkbox-custom"></span>
-				    <span class="label categories">S/M</span>
-				</label></p><p class="categories"><input class="checkbox" type="checkbox" name="checkbox-test">
-				    <span class="checkbox-custom"></span>
-				    <span class="label categories">M/L</span>
-				</label></p>
+				<div onclick="chooseThisSize(1)">
+					<label>
+					<p class="categories"><input class="checkbox left-float-size" type="checkbox" name="checkbox-test">
+					    <span class="checkbox-custom"></span>
+					    <span class="label categories">XS</span>
+					</p>
+					</label>
+				</div>
+				<div onclick="chooseThisSize(2)">
+					<label>
+					<p class="categories"><input class="checkbox left-float-size" type="checkbox" name="checkbox-test">
+					    <span class="checkbox-custom"></span>
+					    <span class="label categories">M</span>
+					</p>
+					</label>
+				</div>
+				<div onclick="chooseThisSize(3)">
+					<label>
+					<p class="categories"><input class="checkbox left-float-size" type="checkbox" name="checkbox-test">
+					    <span class="checkbox-custom"></span>
+					    <span class="label categories">L</span>
+					</p>
+					</label>
+				</div>
+				<div onclick="chooseThisSize(4)">
+					<label>
+					<p class="categories"><input class="checkbox left-float-size" type="checkbox" name="checkbox-test">
+					    <span class="checkbox-custom"></span>
+					    <span class="label categories">XL</span>
+					</p>
+					</label>
+				</div>
+				<div onclick="chooseThisSize(5,6)">
+					<label>
+					<p class="categories"><input class="checkbox left-float-size" type="checkbox" name="checkbox-test">
+					    <span class="checkbox-custom"></span>
+					    <span class="label categories">XXL</span>
+					</p>
+					</label>
+				</div>
+
+
 			</div>
 
 			<div class="row bot-line nav-margin-top">
 				<p class="title-cotolog"><strong>ЦВЕТ</strong></p>
 			</div>
 			<div class="row nav-margin-top">
-				<p class="categories"><label>
-				<input class="checkbox" type="checkbox" name="checkbox-test">
-				    <span class="checkbox-custom"></span>
-				    <span class="label categories"><img src="image/white-color.png" class="float-left-my" > Белый</span>
-				</label></p>
-				<p class="categories"><input class="checkbox" type="checkbox" name="checkbox-test">
-				    <span class="checkbox-custom"></span>
-				    <span class="label categories"><img src="image/grey.png" class="float-left-my" > Серый</span>
-				</label></p><p class="categories"><input class="checkbox" type="checkbox" name="checkbox-test">
-				    <span class="checkbox-custom"></span>
-				    <span class="label categories"><img src="image/red.png" class="float-left-my" > Красный</span>
-				</label></p><p class="categories"><input class="checkbox" type="checkbox" name="checkbox-test">
-				    <span class="checkbox-custom"></span>
-				    <span class="label categories"><img src="image/green.png" class="float-left-my" >Зелённый</span>
-				</label></p><p class="categories"><input class="checkbox" type="checkbox" name="checkbox-test">
-				    <span class="checkbox-custom"></span>
-				    <span class="label categories"><img src="image/blue.png" class="float-left-my" >Синий</span>
-				</label></p><p class="categories"><input class="checkbox" type="checkbox" name="checkbox-test">
-				    <span class="checkbox-custom"></span>
-				    <span class="label categories"><img src="image/brown.png" class="float-left-my">Коричневый</span>
-				</label></p>
-				<p class="categories"><input class="checkbox" type="checkbox" name="checkbox-test">
-				    <span class="checkbox-custom"></span>
-				    <span class="label categories"><img src="image/black-color.png" class="float-left-my" >Чёрный</span>
-				</label></p><p class="categories"><input class="checkbox" type="checkbox" name="checkbox-test">
-				    <span class="checkbox-custom"></span>
-				    <span class="label categories"><img src="image/pink.png" class="float-left-my" >Розовый</span>
-				</label></p>
+
+				<p class="categories">
+					<label onclick="chooseThisSize(1)">
+					<input class="checkbox" type="checkbox" name="checkbox-test">
+					    <span class="checkbox-custom"></span>
+					    <span class="label categories"><img src="image/white-color.png" class="float-left-my" > Белый</span>
+					</label>
+				</p>
+				<p class="categories">
+					<label onclick="chooseThisSize(2)">
+						<input class="checkbox" type="checkbox" name="checkbox-test">
+					    <span class="checkbox-custom"></span>
+				    	<span class="label categories">
+				    	<img src="image/grey.png" class="float-left-my" > Серый</span>
+					</label>
+				</p>
+				<p class="categories">
+					<label onclick="chooseThisSize(3)">
+						<input class="checkbox" type="checkbox" name="checkbox-test">
+					    <span class="checkbox-custom"></span>
+					    <span class="label categories">
+					    <img src="image/red.png" class="float-left-my" > Красный</span>
+					</label>
+				</p>
+				<p class="categories">
+					<label onclick="chooseThisSize(4)">
+						<input class="checkbox" type="checkbox" name="checkbox-test">
+				    	<span class="checkbox-custom"></span>
+				    	<span class="label categories">
+				    	<img src="image/green.png" class="float-left-my" >Зелённый</span>
+					</label>
+				</p>
+				<p class="categories">
+					<label onclick="chooseThisSize(5)">
+						<input class="checkbox" type="checkbox" name="checkbox-test">
+					    <span class="checkbox-custom"></span>
+					    <span class="label categories">
+					    <img src="image/blue.png" class="float-left-my" >Синий</span>
+					</label>
+				</p>
+				<p class="categories">
+					<label onclick="chooseThisSize(6)">
+						<input class="checkbox" type="checkbox" name="checkbox-test">
+					    <span class="checkbox-custom"></span>
+					    <span class="label categories">
+					   	<img src="image/brown.png" class="float-left-my">Коричневый</span>
+					</label>
+				</p>
+				<p class="categories">
+					<label onclick="chooseThisSize(3)">
+						<input class="checkbox" type="checkbox" name="checkbox-test">
+					    <span class="checkbox-custom"></span>
+					    <span class="label categories">
+					    <img src="image/black-color.png" class="float-left-my" >Чёрный</span>
+					</label>
 			</div>
 			<div class="row bot-line">
 				<p class="title-cotolog"><strong>ЦЕНА</strong><img src="image/arrow-down.png" class="float-right-arrow" ></p>
@@ -142,14 +185,14 @@
 		<img src="image/Pagination.png" width="100%" class="bot-line padding-bot">
 		<div class="row">
 			<img src="image/grid.png" class="nav-margin-top25 float-left-my"><img src="image/list.png" class="nav-margin-top25 let-mar-inf float-left-my">
-			<a href="drop.php"><div class="but-popular accent-color nav-margin-top text-center float-right-arrow"> Дроп Шоппинг
+			<a href="drop.html"><div class="but-popular accent-color nav-margin-top text-center float-right-arrow"> Дроп Шоппинг
 			</div></a>
 			<div class="but-popular main-color nav-margin-top text-center float-right-arrow"> Скачать каталог
 			</div>
 
 		</div>
 			
-			<?php echo getCatalog(); ?>
+			 <?php echo getCatalog(); ?> 
 		</div>
 	</div>
 </div>

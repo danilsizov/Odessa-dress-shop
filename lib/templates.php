@@ -15,10 +15,13 @@
 		}
 	}
 	function getHeaderTemplate(){
-		return getTemplate('header');
+		return getTemplate('header', array('search_query' =>  $_GET['query']));
 	}
-	function getCatalog(){
-		include 'temp_db.php';
+	function getCatalog($all_products = false){
+		// print_var($all_products);
+		if(!$all_products){
+			include 'temp_db.php';
+		}
 		$products = getBalancedProducts($all_products);
 		$text = "";
 		for ($i = 0; $i < count($products); $i+=2) { 

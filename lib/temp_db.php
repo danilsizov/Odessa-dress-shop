@@ -32,5 +32,5 @@
 					'price' => 1000,
 					'last_price' => 1200 )
 			);
-	//print_var($all_products);
+	// print_var($all_products);
 ?>

@@ -8,8 +8,8 @@
 		
 		<div class="col-lg-10">
 			<div class="row">
-				<form action="search.php" method='get' id='top-search-form'>	
-					<input type="text" id="top-searchbox" name='query'>
+				<form action="shop.php" method='get' id='top-search-form' name="search">	
+					<input type="text" id="top-searchbox" name='query' value="<%search_query%>">
 					<input type='image' src="image/search.png" id="topsearch-btn">
 				</form>
 				| <a href="my-order.php" class="but-nav-top accent-text-color">

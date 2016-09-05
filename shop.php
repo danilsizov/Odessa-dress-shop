@@ -1,4 +1,5 @@
 <?php require_once 'lib/templates.php';?>
+<?php require_once 'lib/search_engine.php';?>
 <?php header('Content-Type: text/html; charset=utf-8', true); ?>
 <html>
 <head>
@@ -192,7 +193,13 @@
 
 		</div>
 			
-			 <?php echo getCatalog(); ?> 
+			 <?php 
+			 	if(isset($_GET['query']) && $_GET['query'] != ''){
+			 		echo "yes";
+		 			echo getCatalog(searchTempDB($_GET['query'])); 
+		 		}else
+			 		echo getCatalog(); 
+			 ?> 
 		</div>
 	</div>
 </div>

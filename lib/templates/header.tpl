@@ -8,7 +8,7 @@
 		
 		<div class="col-lg-10">
 			<div class="row">
-				<form action="search.php" method='post' id='top-search-form'>	
+				<form action="search.php" method='get' id='top-search-form'>	
 					<input type="text" id="top-searchbox" name='query'>
 					<input type='image' src="image/search.png" id="topsearch-btn">
 				</form>

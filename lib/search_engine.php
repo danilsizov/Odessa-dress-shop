@@ -18,10 +18,10 @@
 	// print_var($_GET);
 	function searchTempDB($query){
 		include 'temp_db.php';
+		//$matches = array();
 		foreach ($all_products as $key => $value) {
 			// print_var($value);
-			if(!preg_match("/^$query/", $value["name"])){
-				//echo "^$query";
+			if(!preg_match("/^$query/i", $value["name"])){
 				unset($all_products[$key]);
 			}
 		}

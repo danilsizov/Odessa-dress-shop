@@ -19,7 +19,7 @@
 	}
 	function getCatalog($all_products = false){
 		// print_var($all_products);
-		if(!$all_products){
+		if($all_products === false){
 			include 'temp_db.php';
 		}
 		$products = getBalancedProducts($all_products);
@@ -27,7 +27,7 @@
 		for ($i = 0; $i < count($products); $i+=2) { 
 			$text .= getCatalogPair(
 				array(
-					'first' => getCatalogProduct($products[$i]), 
+					'first' => ($products[$i]) ? getCatalogProduct($products[$i]): "", 
 					'second' => ($products[$i + 1]) ? getCatalogProduct($products[$i + 1]) : ""
 					)
 				);

@@ -195,8 +195,9 @@
 			
 			 <?php 
 			 	if(isset($_GET['query']) && $_GET['query'] != ''){
-			 		//echo "yes";
-		 			echo getCatalog(searchTempDB($_GET['query'])); 
+			 		$products = searchTempDB($_GET['query']);
+			 		if($products) echo getCatalog($products); 
+			 		else echo "По вашему запросу ничего не найдено!";
 		 		}else
 			 		echo getCatalog(); 
 			 ?> 

@@ -28,4 +28,14 @@
 		// print_var($all_products);
 		return $all_products;
 	}
+	function getByIdFromTempDB($id)
+	{
+		include 'temp_db.php';
+		foreach ($all_products as $key => $value) {
+			if($value["id"] == $id){
+				return $all_products[$key];
+			}
+		}
+		return null;
+	}
 ?>

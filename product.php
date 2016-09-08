@@ -2,6 +2,7 @@
 <?php require_once "lib/search_engine.php"; ?>
 <?php 
 	$product = (isset($_GET['id'])) ? getByIdFromTempDB($_GET['id']) : null;
+	if(!$product) exit("<h1>404. Not Found</h1>");
 ?>
 <html>
 <head>
@@ -26,10 +27,6 @@
 </head>
 
 <body>
-<?php echo getHeaderTemplate(); 
-	if(!$product) exit("FUCK YOU, RETARDED ANTON");
-?>
-
 <div class="row nav-margin-top50">
 	<div class="small-line"><strong>Главная</strong></div><div class="black-box"><strong>Продукт</strong></div>
 </div>

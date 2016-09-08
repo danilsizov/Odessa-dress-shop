@@ -1,18 +1,18 @@
 <?php
-	require_once "models/database.php";
+	#require_once "models/database.php";
 	require_once "utils.php";
-	function search($query){
-		$db = Database::getInstance();
-		$sql = "SELECT * FROM `products` WHERE `name` REGEXP '^{$query}'";
-		//$sql = "SELECT * FROM `products`";
-		$mysql_result = $db->query($sql);
-		if (!$mysql_result) return false;
-		$array = array();
-		while ($row = $mysql_result->fetch_assoc()) {
-			array_push($array, $row);
-		}
-		return $array;
-	}
+	// function search($query){
+	// 	$db = Database::getInstance();
+	// 	$sql = "SELECT * FROM `products` WHERE `name` REGEXP '^{$query}'";
+	// 	//$sql = "SELECT * FROM `products`";
+	// 	$mysql_result = $db->query($sql);
+	// 	if (!$mysql_result) return false;
+	// 	$array = array();
+	// 	while ($row = $mysql_result->fetch_assoc()) {
+	// 		array_push($array, $row);
+	// 	}
+	// 	return $array;
+	// }
 
 
 	// print_var($_GET);

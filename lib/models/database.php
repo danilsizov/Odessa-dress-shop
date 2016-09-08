@@ -1,5 +1,5 @@
 <?php
-require_once "config.php";
+require_once "../config.php";
 class Database {
 	private $mysqli;
 	private static $_instance = null;

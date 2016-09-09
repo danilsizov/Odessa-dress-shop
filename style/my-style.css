@@ -603,6 +603,7 @@ input
 	color:white; 
 
 }
+
 .sign-in-form .or-block {
 	display: flex;
 	flex-direction: row;
@@ -662,7 +663,6 @@ input
 	margin: 0 auto;
 	padding-top: 25px;
 }
-@import "compass/css3";
 
 .flex-container {
   padding: 0;
@@ -727,11 +727,34 @@ input
   font-size: 1em;
   text-align: center;
 }
+<<<<<<< HEAD
+.flex-item-slider {
+  padding: 5px;
+  width: 300px;
+  margin-top: 10px;
+  line-height: 1;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+}
+
+
+
+.flex-item-info{
+  padding: 5px;
+  width: 350px;
+  margin-top: 10px;
+  line-height: 1;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+}
 
 
 
 
-@media screen and (max-width: 1680px)
+@media screen and (max-width: 1280px)
 {
 	body
 	{

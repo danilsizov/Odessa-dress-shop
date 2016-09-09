@@ -116,70 +116,70 @@
 <div class="row">
 	<div class="col-lg-3">
 
-	<div class="block-big-text accent-text-color col-lg-1">Популярные</div><div class="second-word main-color-text col-lg-1 let-mar-prod">Товары</div>
+	<div class="block-big-text accent-text-color col-lg-1">Популярные товары</div>
 
 	</div>
 </div>
 <div class="row">
-	<div class="col-lg-3">
 
-	<!-- <img src="image/Images.png" class="nav-margin-top50" width="100%"> -->
-		<div class="carousel-container">
-			<div id="carousel">
-				<div class="slide"><img src="image/dress-new-mini.jpg" width="100%"></div>
-				<div class="slide"><img src="image/dress-new-mini.jpg"></div>
-				<div class="slide"><img src="image/dress-new-mini.jpg"></div>
-				<div class="slide"><img src="image/dress-new-mini.jpg"></div>
-				<div class="slide"><img src="image/dress-new-mini.jpg"></div>
-				<div class="slide"><img src="image/dress-new-mini.jpg"></div>
-				<div class="slide"><img src="image/dress-new-mini.jpg"></div>
-				<div class="slide"><img src="image/dress-new-mini.jpg"></div>
+	<ul class="flex-container">
+		<li class="flex-item-slider">
+		    <div class="carousel-container">
+				<div id="carousel">
+					<div class="slide"><img src="image/dress-new-mini.jpg" width="100%"></div>
+					<div class="slide"><img src="image/dress-new-mini.jpg"></div>
+					<div class="slide"><img src="image/dress-new-mini.jpg"></div>
+					<div class="slide"><img src="image/dress-new-mini.jpg"></div>
+					<div class="slide"><img src="image/dress-new-mini.jpg"></div>
+					<div class="slide"><img src="image/dress-new-mini.jpg"></div>
+					<div class="slide"><img src="image/dress-new-mini.jpg"></div>
+					<div class="slide"><img src="image/dress-new-mini.jpg"></div>
+				</div>
+				<div class="carousel-controls">
+					<span id="carousel-left"></span>
+					<span id="carousel-right"></span>
+				</div>
 			</div>
-			<div class="carousel-controls">
-				<span id="carousel-left"></span>
-				<span id="carousel-right"></span>
+		</li>
+		<li class="flex-item-info">
+		    <div class="name-of-product nav-margin-top50" >
+				Bonded Strappy Doll Dress
 			</div>
-		</div>
-	</div>
-	<div class="col-lg-5">
-	<div class="name-of-product nav-margin-top50" >
-		Bonded Strappy Doll Dress
-	</div>
-	<div class="my-prise">
-	<span class="main-color-text">79,99 грн</span><span class="old-prise left-mar">89,00 грн</span>
-	<p><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/star.png"><img src="image/star.png"></p>
-	<p><img src="image/weight.png"><img src="image/information.png" class="let-mar-inf"></p>
-	<p class="mylatotext nav-margin-top30">Диффузионная линия культового итальянского дома дизайна Франко Москино, Любовь Москино создает игривую и непочтительную коллекцию, строгую и в то же время с чувством юношеской прохлады. </p>
-	</div>
-	<div class="row left-mar">
-		<div class="dropdown float-left full-width nav-margin-top30">
-		  <button onclick="myColorFunction()" class="dropbtn">Цвет  <img src="image/arrow.png" class="let-mar"></button>
-		  <div id="myDropdown" class="dropdown-content">
-		    <a href="#">Черный</a>
-		    <a href="#">Желтый</a>
-		    <a href="#">Голубой</a>
-		  </div>
-		</div>
-		<div class="dropdown float-left full-width nav-margin-top">
-		  <button onclick="mySizeFunction()" class="dropbtn">Размер <img src="image/arrow.png" class="let-mar"></button>
-		  <div id="Size" class="dropdown-content">
-		    <a href="#">Большой</a>
-		    <a href="#">Средний</a>
-		    <a href="#">Средний</a>
-		  </div>
-		</div>
-	</div>
-	<div class="row nav-margin-top30">
-		<div class="but-popular accent-color nav-margin-top text-center \">
-			<img src="image/bug-white.png"> В Корзину
-		</div>
-		<div class="but-popular main-color nav-margin-top text-center let-mar-inf">
-			<img src="image/like.png"> Like!
-		</div>
-	</div>
-	</div>
-	<div class="col-lg-4">
-		<div class="slider minus-margin bottom-slider">
+			<div class="my-prise">
+				<span class="main-color-text">79,99 грн</span><span class="old-prise left-mar">89,00 грн</span>
+				<p><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/star.png"><img src="image/star.png"></p>
+				<p><img src="image/weight.png"><img src="image/information.png" class="let-mar-inf"></p>
+				<p class="mylatotext nav-margin-top30">Диффузионная линия культового итальянского дома дизайна Франко Москино, Любовь Москино создает игривую и непочтительную коллекцию, строгую и в то же время с чувством юношеской прохлады. </p>
+			</div>
+				<div class="row left-mar">
+					<div class="dropdown float-left full-width nav-margin-top30">
+					<button onclick="myColorFunction()" class="dropbtn">Цвет  <img src="image/arrow.png" class="let-mar"></button>
+					<div id="myDropdown" class="dropdown-content">
+					    <a href="#">Черный</a>
+					    <a href="#">Желтый</a>
+					    <a href="#">Голубой</a>
+					</div>
+					</div>
+					<div class="dropdown float-left full-width nav-margin-top">
+					    <button onclick="mySizeFunction()" class="dropbtn">Размер <img src="image/arrow.png" class="let-mar"></button>
+					<div id="Size" class="dropdown-content">
+						<a href="#">Большой</a>
+					    <a href="#">Средний</a>
+					    <a href="#">Средний</a>
+		         	</div>
+				</div>
+			</div>
+			<div class="row nav-margin-top30">
+				<div class="but-popular accent-color nav-margin-top text-center \">
+					<img src="image/bug-white.png"> В Корзину
+				</div>
+				<div class="but-popular main-color nav-margin-top text-center let-mar-inf">
+					<img src="image/like.png"> Like!
+				</div>
+			</div>
+		</li>
+		<li class="flex-item-info">
+		    <div class="slider minus-margin bottom-slider">
 			<ul id="bottom-slider" >
 				<li><img src="image/dress-new.jpg" width="355px" height="385px"></li>
 				<li><img src="image/dress-new.jpg" width="355px" height="385px"></li>
@@ -197,6 +197,12 @@
 			  <a data-slide-index="3" href=""><img src="image/dress-new.jpg" width="355px" height="385px"></a>
 			</div>
 		</div>
+		</li>
+	</ul>
+	
+	
+	<div class="col-lg-4">
+		
 		<!-- <img src="image/image.png" width="100%" class="minus-margin">
 		<img src="image/mini-image.png" width="100%" class="margin-top"> -->
 	</div>

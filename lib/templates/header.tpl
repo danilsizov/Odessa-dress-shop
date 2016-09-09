@@ -9,7 +9,7 @@
 					<input type="text" id="top-searchbox" name='query' value="<%search_query%>">
 					<input type='image' src="image/search.png" id="topsearch-btn">
 				</form>|<a href="my-order.php" class="but-nav-top accent-text-color">
-					<strong>Моя корзина</strong>
+				<strong>Моя корзина</strong>
 				</a>
 				<img src="image/shop_cart.png" width="20px">
 			</li>
@@ -27,7 +27,9 @@
 					    <a href="#">USD 1грн=25дол.</a>
 					    <a href="#">EUR 1грн=27евро</a>
 					</div>
-					<a href="#" class="but-nav-top accent-text-color dropmy " onclick="myLanguageFunction()"><img src="http://www.iconsearch.ru/ajax/download.php?icon_id=42915&size=1&format=ico"></a>
+					<a href="#" class="but-nav-top accent-text-color dropmy" onclick="myLanguageFunction()">
+						<img src="http://www.iconsearch.ru/ajax/download.php?icon_id=42915&size=1&format=ico" onclick="myLanguageFunction()">
+					</a>
 					<div id="Language" class="dropdown-content let-mar-prod-new">
 					    <a href="#"><img src="http://www.iconsearch.ru/ajax/download.php?icon_id=42915&size=1&format=ico"> Русский</a>
 					    <a href="#"><img src="http://abali.ru/wp-content/uploads/2010/12/united-states-flag-16x16.png"> English</a>

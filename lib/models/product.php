@@ -18,5 +18,8 @@
 		public function getCount(){
 			return $this->db->query("SELECT COUNT(*) as count FROM products")->fetch_assoc()['count'];
 		}
+		public function getRate($product_id){
+			
+		}
 	}
 ?>

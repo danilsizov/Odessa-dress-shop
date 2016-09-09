@@ -20,6 +20,7 @@
 </head>
 
 <body onLoad="load()">
+
 <?php echo getHeaderTemplate(); ?>
 
 <div class="slider but-nav-top150">

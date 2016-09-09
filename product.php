@@ -1,4 +1,9 @@
 <?php require_once "lib/templates.php"; ?>
+<?php require_once "lib/search_engine.php"; ?>
+<?php 
+	$product = (isset($_GET['id'])) ? getByIdFromTempDB($_GET['id']) : null;
+	if(!$product) exit("<h1>404. Not Found</h1>");
+?>
 <html>
 <head>
 
@@ -22,7 +27,6 @@
 </head>
 
 <body>
-<?php echo getHeaderTemplate(); ?>
 <div class="row nav-margin-top50">
 	<div class="small-line"><strong>Главная</strong></div><div class="black-box"><strong>Продукт</strong></div>
 </div>
@@ -32,39 +36,40 @@
 
 	<div class="slider bottom-slider">
 			<ul id="bottom-slider" >
-				<li><img src="image/dress.jpg"></li>
-				<li><img src="image/dress.jpg"></li>
-				<li><img src="image/dress.jpg"></li>
-				<li><img src="image/dress.jpg"></li>
+				<li><img src="image/dress-new.jpg"></li>
+				<li><img src="image/dress-new.jpg"></li>
+				<li><img src="image/dress-new.jpg"></li>
+				<li><img src="image/dress-new.jpg"></li>
 			</ul>
 			<div class="slider-selectors">
 				<span id="bottom-slider-left"></span>
 				<span id="bottom-slider-right"></span>
 			</div>
 			<div id="bottom-slider-pager">
-			  <a data-slide-index="0" href=""><img src="image/dress.jpg"></a>
-			  <a data-slide-index="1" href=""><img src="image/dress.jpg"></a>
-				<a data-slide-index="2" href=""><img src="image/dress.jpg"></a>
-			  <a data-slide-index="3" href=""><img src="image/dress.jpg"></a>
+			  <a data-slide-index="0" href=""><img src="image/dress-new.jpg"></a>
+			  <a data-slide-index="1" href=""><img src="image/dress-new.jpg"></a>
+				<a data-slide-index="2" href=""><img src="image/dress-new.jpg"></a>
+			  <a data-slide-index="3" href=""><img src="image/dress-new.jpg"></a>
 			</div>
 		</div>
 
 </div>
 <div class="col-lg-7">
 	<div class="name-of-product nav-margin-top50" >
-		Bonded Strappy Doll Dress
+		<?php echo $product['name'];?>
 	</div>
 	<div class="my-prise">
-	<span class="main-color-text">79,99 грн</span><span class="old-prise left-mar">89,00 грн</span>
-	<p><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/star.png"><img src="image/star.png"></p>
-	<p><img src="image/weight.png"><img src="image/information.png" class="let-mar-inf"></p>
-	<p class="mylatotext nav-margin-top30">A diffusion line of Franco Moschino's iconic Italian design house, Love Moschino creates a playful and irreverent collection injected with a sense of youthful cool. </p>
+		<span class="main-color-text"><?php echo $product['price'];?> грн</span>
+		<span class="old-prise left-mar"><?php echo $product['last_price'];?> грн</span>
+		<p><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/star.png"><img src="image/star.png"></p>
+		<p><img src="image/weight.png"><img src="image/information.png" class="let-mar-inf"></p>
+		<p class="mylatotext nav-margin-top30">A diffusion line of Franco Moschino's iconic Italian design house, Love Moschino creates a playful and irreverent collection injected with a sense of youthful cool. </p>
 	</div>
 	<div class="row left-mar">
 		<div class="dropdown float-left full-width nav-margin-top30 text-center">
 		  <div class="row">
 		  <div class="col-lg-4">
-			   <div><img src="image/dress.jpg" height="200px"></div>
+			   <div><img src="image/dress-new.jpg" height="200px"></div>
 			   <span class="label categories nav-margin-top"><img src="image/white-color.png" class="float-left-my" > Белый</span>
 			   <button onclick="myColorFunction()" class="dropbtn nav-margin-top">Размеры<img src="image/arrow.png" class="let-mar top-mar-min"></button>
 			  <div id="myDropdown" class="dropdown-content">
@@ -74,7 +79,7 @@
 			  </div>
 			</div>
 			<div class="col-lg-4">
-			   <div><img src="image/dress.jpg" height="200px"></div>
+			   <div><img src="image/dress-new.jpg" height="200px"></div>
 			   <span class="label categories nav-margin-top"><img src="image/red.png" class="float-left-my" > Красный</span>
 			   <button onclick="myColorFunction()" class="dropbtn nav-margin-top">Размеры<img src="image/arrow.png" class="let-mar top-mar-min"></button>
 			  <div id="myDropdown" class="dropdown-content">
@@ -84,7 +89,7 @@
 			  </div>
 			</div>
 			<div class="col-lg-4">
-			   <div><img src="image/dress.jpg" height="200px"></div>
+			   <div><img src="image/dress-new.jpg" height="200px"></div>
 			   <span class="label categories nav-margin-top"><img src="image/black-color.png" class="float-left-my" >Чёрный</span>
 			   <button onclick="myColorFunction()" class="dropbtn nav-margin-top">Размеры<img src="image/arrow.png" class="let-mar top-mar-min"></button>
 			  <div id="myDropdown" class="dropdown-content">
@@ -107,7 +112,7 @@
 			<img src="image/communication.png"> Оставить отзыв
 		</div>
 	</div>
-	<img src="image/product-Information.png" width="100%" class="nav-margin-top">
+	<img src="image/Product-Information.png" width="100%" class="nav-margin-top">
 	</div>
 </div>
 

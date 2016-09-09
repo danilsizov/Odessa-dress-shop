@@ -8,16 +8,12 @@
 	<link rel="stylesheet" href="style/colors.css">
 	<link rel="stylesheet" href="style/sign-in-style.css">
 	<meta charset="utf-8">
-
-<script src="js/my-script.js"></script>
-<!-- Optional theme -->
-<link rel="stylesheet" href="style/bootstrap-theme.min.css">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="style/bootstrap-theme.min.css">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/my-script.js"></script>
 </head>
 
 <body>
@@ -27,11 +23,32 @@
 </div>
 
 <div class="container">
-	<div class="col-lg-3">
-
-	</div>
-	<div class="col-lg-6 nav-margin-top50">
-	<img src="image/Sign-In-Form.png" width="100%">
+	<div class="col-lg-offset-3 col-lg-6 nav-margin-top50 sign-in-form">
+		<!-- <img src="image/Sign-In-Form.png" width="100%"> -->
+		<h3>ВОЙТИ</h3>
+		<h5>Войти через ВКонтакте</h5>
+		<div class="vk-logo">
+			<img src="./image/vk-disabled.png">
+		</div>
+		<br>
+		<div class="or-block">
+			<div class="left hr"></div>
+			<div>или</div>
+			<div class="right hr"></div>
+		</div>
+		<h5>Введите свой адресс</h5>
+		<form action="auth.php" method="post">
+			<h5>Email</h5>
+			<input type="email" name='email'>
+			<br>
+			<br>
+			<h5>Пароль</h5>
+			<input type="password" name='email'>
+			<div class="submit-container">
+				<button class="submit-btn">Войти</button>
+			</div>
+		</form>
+		<h5><a href="reset-pass.php">Забыли пароль?</a></h5>
 	</div>
 
 </div>

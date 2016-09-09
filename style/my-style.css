@@ -604,8 +604,64 @@ input
 
 }
 
-
-@import "compass/css3";
+.sign-in-form .or-block {
+	display: flex;
+	flex-direction: row;
+}
+.sign-in-form .or-block .hr {
+	border-bottom: 1px solid #ddd;
+	width: 100%;
+	margin-bottom: 8px;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+.sign-in-form h3, 
+.sign-in-form h5 {
+	text-align: center;
+	margin: 17px;
+}
+.sign-in-form h5 a {
+	color: black;
+	text-decoration: underline;
+} 
+.sign-in-form h5 a:hover {
+	text-decoration: none;
+}
+.sign-in-form .vk-logo{
+	width: 25%;
+	margin: 0 auto;
+}
+.sign-in-form .vk-logo img{
+	width: 100%;
+}
+.sign-in-form form h5 {
+	text-align: left;
+	margin-left: 0;
+}
+.sign-in-form form{
+	width: 70%;
+	margin: 0 auto;
+}
+.sign-in-form form input {
+	position: inherit;
+	width: 100%;
+	background-color: white;
+	border: 1px solid black !important;
+}
+.sign-in-form .submit-btn{
+	margin-top: 30px;
+	width: 100%;
+	background-color: black;
+	display: block;
+	border: none;
+	color:white;
+	padding: 10px;
+}
+.sign-in-form .submit-container{
+	width: 35%;
+	margin: 0 auto;
+	padding-top: 25px;
+}
 
 .flex-container {
   padding: 0;
@@ -670,6 +726,7 @@ input
   font-size: 1em;
   text-align: center;
 }
+<<<<<<< HEAD
 .flex-item-slider {
   padding: 5px;
   width: 300px;
@@ -692,7 +749,6 @@ input
   font-size: 1em;
   text-align: center;
 }
-
 
 
 

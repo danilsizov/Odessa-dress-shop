@@ -8,8 +8,8 @@
 			  	<form action="shop.php" method='get' id='top-search-form' name="search">	
 					<input type="text" id="top-searchbox" name='query' value="<%search_query%>">
 					<input type='image' src="image/search.png" id="topsearch-btn">
-				</form>	|<a href="my-order.php" class="but-nav-top accent-text-color">
-					<strong>Моя корзина</strong>
+				</form>|<a href="my-order.php" class="but-nav-top accent-text-color">
+				<strong>Моя корзина</strong>
 				</a>
 				<img src="image/shop_cart.png" width="20px">
 			</li>

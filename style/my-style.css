@@ -645,6 +645,7 @@ input
 	position: inherit;
 	width: 100%;
 	background-color: white;
+	color: black;
 	border: 1px solid black !important;
 }
 .sign-in-form .submit-btn{

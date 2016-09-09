@@ -1,5 +1,6 @@
 <?php
-require_once "../config.php";
+require_once "./lib/config.php";
+require_once './lib/utils.php';
 class Database {
 	private $mysqli;
 	private static $_instance = null;

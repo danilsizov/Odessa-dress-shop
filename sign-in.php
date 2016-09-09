@@ -37,13 +37,13 @@
 			<div class="right hr"></div>
 		</div>
 		<h5>Введите свой адресс</h5>
-		<form action="auth.php" method="post">
+		<form action="auth.php" method="post" name='sign_in_form'>
 			<h5>Email</h5>
 			<input type="email" name='email'>
 			<br>
 			<br>
 			<h5>Пароль</h5>
-			<input type="password" name='email'>
+			<input type="password" name='password'>
 			<div class="submit-container">
 				<button class="submit-btn">Войти</button>
 			</div>

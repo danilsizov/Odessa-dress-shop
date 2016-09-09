@@ -1,5 +1,5 @@
 <?php
-	require_once 'utils.php';
+	//require_once 'utils.php';
 
 	define("TEMPLATES_DIR", dirname(__FILE__)."/templates/");
 
@@ -15,7 +15,7 @@
 		}
 	}
 	function getHeaderTemplate(){
-		return getTemplate('header', array('search_query' =>  $_GET['query']));
+		return getTemplate('header', array('search_query' =>  @$_GET['query']));
 	}
 	function getCatalog($all_products = false){
 		// print_var($all_products);

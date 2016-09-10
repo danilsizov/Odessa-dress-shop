@@ -26,7 +26,6 @@
 		public function auth($email, $password){
 			if ($this->validatesEmail($email) && $this->validatesPassword($password)){
 				$db_result = $this->db->query("SELECT * FROM users WHERE email = '$email'");
-				var_dump($db_result);
 				if(!$db_result) return "user_email_not_found";
 				$row = $db_result->fetch_assoc();
 				if($row['password'] == $this->generatePasswordDigest($password)){

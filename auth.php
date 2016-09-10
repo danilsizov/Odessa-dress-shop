@@ -1,7 +1,9 @@
 <?php 
 	require_once "./lib/models/user.php";	
-	echo "asd".DB_PASS;
-	print_r($_POST);
-	$user = new User();
-	echo $user->auth($_POST['email'], $_POST['password']);
+	if(isset($_POST['email']) && isset($_POST['password'])){
+		$user = new User();
+		if($user->auth($_POST['email'], $_POST['password'])){
+			header('location: ./');
+		}else header('location: ./sign-in.php');
+	}
 ?>

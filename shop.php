@@ -192,7 +192,7 @@
 			</div>
 
 		</div>
-			
+			<ul class="flex-container">
 			 <?php 
 			 	if(isset($_GET['query']) && $_GET['query'] != ''){
 			 		$products = searchTempDB($_GET['query']);
@@ -201,6 +201,7 @@
 		 		}else
 			 		echo getCatalog(); 
 			 ?> 
+			 </ul>
 		</div>
 	</div>
 </div>

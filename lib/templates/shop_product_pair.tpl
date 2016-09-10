@@ -1,4 +1,4 @@
-<div class="row products">
+<div class="products flex-container">
 	<%first%>
 	<%second%>
 </div>

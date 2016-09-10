@@ -1,6 +1,6 @@
 	<a href="product.php?id=<%id%>" id="dress<%id%>">
 		<li class="flex-item-product">
-			<div class="proguct">
+			<div class="product">
 				<div class="placeholder">
 					<div class="row">
 						<div class="like"></div>
@@ -24,15 +24,3 @@
 			</div>
 		</li>
 	</a>
-
-	<script type="text/javascript">
-		$.ajax({
-		  type: 'POST',
-		  url: 'response.php?action=sample2',
-		  data: 'name=Andrew&nickname=Aramis',
-		  success: function(data){
-		    $('#name').html(data);
-		  }
-		});
-
-	</script>

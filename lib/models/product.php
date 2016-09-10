@@ -21,8 +21,32 @@
 			#$db_result = $this->db->query("SELECT * FROM products WHERE id = '{$id}'");
 			#return $db_result->fetch_assoc();
 		}	
-		public static function getSomeProducts($where, $order, $count, $offset){
-			
+		public static function getSomeProducts($where=false, $order=false, $count=false, $offset=false){
+			$db = Database::getInstance();
+			$sql = "SELECT * FROM products";
+			if ($where) $sql .= "WHERE $where";
+			if ($order) $sql .= "ORDER BY $order";
+			if ($limit) {
+				$sql .= "LIMIT $count";
+				if ($offset) {
+					$sql .= "OFFSET $offset";
+				}
+			}
+			$db_result = $db->query($sql);
+			$ar = array();
+			while ($row = $db_result->fetch_assoc()) {
+				array_push($ar, $row)
+			}
+			return $ar;
+		}
+		private static function parseProduct($row){
+			$user = new User();
+			$user->id = $row['id'];
+			$user->name = $row['name'];
+			$user->description = $row['description'];
+			$user->old_price = $row['old_price'];
+			$user->new_price = $row['new_price'];
+			return $user;
 		}
 		public static function getCount(){
 			$db = Database::getInstance();

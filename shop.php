@@ -113,7 +113,7 @@
 					<label onclick="chooseThisSize(1)">
 					<input class="checkbox" type="checkbox" name="checkbox-test">
 					    <span class="checkbox-custom"></span>
-					    <span class="label categories"><img src="image/white-color.png" class="float-left-my" > Белый</span>
+					    <span class="label categories"><img src="image/White-color.png" class="float-left-my" > Белый</span>
 					</label>
 				</p>
 				<p class="categories">
@@ -121,7 +121,7 @@
 						<input class="checkbox" type="checkbox" name="checkbox-test">
 					    <span class="checkbox-custom"></span>
 				    	<span class="label categories">
-				    	<img src="image/grey.png" class="float-left-my" > Серый</span>
+				    	<img src="image/Grey.png" class="float-left-my" > Серый</span>
 					</label>
 				</p>
 				<p class="categories">
@@ -129,7 +129,7 @@
 						<input class="checkbox" type="checkbox" name="checkbox-test">
 					    <span class="checkbox-custom"></span>
 					    <span class="label categories">
-					    <img src="image/red.png" class="float-left-my" > Красный</span>
+					    <img src="image/Red.png" class="float-left-my" > Красный</span>
 					</label>
 				</p>
 				<p class="categories">
@@ -137,7 +137,7 @@
 						<input class="checkbox" type="checkbox" name="checkbox-test">
 				    	<span class="checkbox-custom"></span>
 				    	<span class="label categories">
-				    	<img src="image/green.png" class="float-left-my" >Зелённый</span>
+				    	<img src="image/Green.png" class="float-left-my" >Зелённый</span>
 					</label>
 				</p>
 				<p class="categories">
@@ -145,7 +145,7 @@
 						<input class="checkbox" type="checkbox" name="checkbox-test">
 					    <span class="checkbox-custom"></span>
 					    <span class="label categories">
-					    <img src="image/blue.png" class="float-left-my" >Синий</span>
+					    <img src="image/Blue.png" class="float-left-my" >Синий</span>
 					</label>
 				</p>
 				<p class="categories">
@@ -153,7 +153,7 @@
 						<input class="checkbox" type="checkbox" name="checkbox-test">
 					    <span class="checkbox-custom"></span>
 					    <span class="label categories">
-					   	<img src="image/brown.png" class="float-left-my">Коричневый</span>
+					   	<img src="image/Brown.png" class="float-left-my">Коричневый</span>
 					</label>
 				</p>
 				<p class="categories">
@@ -161,7 +161,7 @@
 						<input class="checkbox" type="checkbox" name="checkbox-test">
 					    <span class="checkbox-custom"></span>
 					    <span class="label categories">
-					    <img src="image/black-color.png" class="float-left-my" >Чёрный</span>
+					    <img src="image/Black-color.png" class="float-left-my" >Чёрный</span>
 					</label>
 			</div>
 			<div class="row bot-line">
@@ -192,7 +192,7 @@
 			</div>
 
 		</div>
-			<ul class="flex-container">
+			<ul>
 			 <?php 
 			 	if(isset($_GET['query']) && $_GET['query'] != ''){
 			 		$products = searchTempDB($_GET['query']);

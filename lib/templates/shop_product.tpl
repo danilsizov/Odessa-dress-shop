@@ -1,5 +1,4 @@
 	<a href="product.php?id=<%id%>" id="dress<%id%>">
-	<ul class="flex-container">
 		<li class="flex-item-product">
 			<div class="proguct">
 				<div class="placeholder">
@@ -10,7 +9,7 @@
 				</div>
 
 				<div class="product-info">
-					<div class="name-of-product nav-margin-top50" >
+					<div class="name-of-product nav-margin-top50" id="name">
 						<%name%>
 					</div>
 					<div class="my-prise">
@@ -24,5 +23,16 @@
 				</div>
 			</div>
 		</li>
-	</ul>
 	</a>
+
+	<script type="text/javascript">
+		$.ajax({
+		  type: 'POST',
+		  url: 'response.php?action=sample2',
+		  data: 'name=Andrew&nickname=Aramis',
+		  success: function(data){
+		    $('#name').html(data);
+		  }
+		});
+
+	</script>

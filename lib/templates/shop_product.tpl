@@ -16,7 +16,9 @@
 					<div class="my-prise">
 						<span class="main-color-text"><%price%> UAH</span>
 						<span class="old-prise left-mar"><%last_price%> UAH</span>
-						<p><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/full-star.png"><img src="image/star.png"><img src="image/star.png"></p>
+						<p>
+							<%stars%>
+						</p>
 						<p class="info-icons"><img src="image/weight.png"><img src="image/information.png" class="let-mar-inf"></p>
 					</div>
 				</div>

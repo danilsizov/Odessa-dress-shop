@@ -4,22 +4,24 @@
 	class Product
 	{
 		private $db;
-		public function __construct(argument)
+		public function __construct()
 		{
-			$db = Database::getInstance();
+			$this->db = Database::getInstance();
 		}
-		public function getById($id){
+		public static function getById($id){
 			#$db_result = $this->db->query("SELECT * FROM products WHERE id = '{$id}'");
 			#return $db_result->fetch_assoc();
 		}	
-		public function getSomeProducts($where, $order, $count, $offset){
+		public static function getSomeProducts($where, $order, $count, $offset){
 			
 		}
-		public function getCount(){
-			return $this->db->query("SELECT COUNT(*) as count FROM products")->fetch_assoc()['count'];
+		public static function getCount(){
+			$db = Database::getInstance();
+			return $db->query("SELECT COUNT(*) as count FROM products")->fetch_assoc()['count'];
 		}
-		public function getRate($product_id){
+		public function getRate(){
 			
 		}
+
 	}
 ?>

@@ -5,5 +5,5 @@
 		if($user->auth($_POST['email'], $_POST['password'])){
 			header('location: ./');
 		}else header('location: ./sign-in.php');
-	}
+	}else header('location: ./sign-in.php');
 ?>

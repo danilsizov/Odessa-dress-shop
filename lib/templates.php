@@ -39,7 +39,15 @@
 		return getTemplate('shop_product_pair', $array);
 	}
 	function getCatalogProduct($product){
+		$product['stars'] = getStars($product['stars']);
 		return getTemplate('shop_product', $product);
+	}
+	function getStars($num){
+		$text = '';
+		for ($i=0; $i < $num; $i++) { 
+			$text .= getTemplate('shop_stars');
+		}
+		return $text;
 	}
 	function getBalancedProducts($products){
 		if (!(count($products) % 2 == 0)){

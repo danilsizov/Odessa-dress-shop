@@ -13,8 +13,8 @@
 						<%name%>
 					</div>
 					<div class="my-prise">
-						<span class="main-color-text"><%price%> UAH</span>
-						<span class="old-prise left-mar"><%last_price%> UAH</span>
+						<span class="main-color-text"><%new_price%> UAH</span>
+						<span class="old-prise left-mar"><%old_price%> UAH</span>
 						<p>
 							<%stars%>
 						</p>

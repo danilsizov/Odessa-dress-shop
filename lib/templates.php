@@ -39,7 +39,7 @@
 		return getTemplate('shop_product_pair', $array);
 	}
 	function getCatalogProduct($product){
-		$product['stars'] = getStars($product['stars']);
+		$product['stars'] = getStars($product['rate']);
 		return getTemplate('shop_product', $product);
 	}
 	function getStars($num){

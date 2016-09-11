@@ -21,12 +21,17 @@
 			#$db_result = $this->db->query("SELECT * FROM products WHERE id = '{$id}'");
 			#return $db_result->fetch_assoc();
 		}	
+		public static function search($query){
+			
+			return getSomeProducts("`name` REGEXP '^{$query}'");
+			
+		}
 		public static function getSomeProducts($where=false, $order=false, $count=false, $offset=false){
 			$db = Database::getInstance();
 			$sql = "SELECT * FROM products";
 			if ($where) $sql .= "WHERE $where";
 			if ($order) $sql .= "ORDER BY $order";
-			if ($limit) {
+			if ($count) {
 				$sql .= "LIMIT $count";
 				if ($offset) {
 					$sql .= "OFFSET $offset";
@@ -35,7 +40,11 @@
 			$db_result = $db->query($sql);
 			$ar = array();
 			while ($row = $db_result->fetch_assoc()) {
-				array_push($ar, $row)
+				$rate_responce = $db->query("SELECT avg(rate) AS rate FROM rates WHERE product_id = {$row['id']}");
+				if($rate_responce){
+					$row['rate'] = $rate_responce->fetch_assoc()['rate'];
+				}else $row['rate'] = 3;
+				array_push($ar, $row);
 			}
 			return $ar;
 		}
@@ -72,9 +81,6 @@
 		}
 		public function getRate(){
 			return $this->rate;
-		}
-		public function setId(){
-			
 		}
 		public function setName(){
 			

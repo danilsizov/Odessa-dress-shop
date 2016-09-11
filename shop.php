@@ -1,5 +1,5 @@
 <?php require_once 'lib/templates.php';?>
-<?php require_once 'lib/search_engine.php';?>
+<?php require_once 'lib/models/product.php';?>
 <?php header('Content-Type: text/html; charset=utf-8', true); ?>
 <html>
 <head>
@@ -195,11 +195,11 @@
 			<ul>
 			 <?php 
 			 	if(isset($_GET['query']) && $_GET['query'] != ''){
-			 		$products = searchTempDB($_GET['query']);
+			 		$products = Product::search($_GET['query']);
 			 		if($products) echo getCatalog($products); 
 			 		else echo "По вашему запросу ничего не найдено!";
 		 		}else
-			 		echo getCatalog(); 
+			 		echo getCatalog(Product::getSomeProducts()); 
 			 ?> 
 			 </ul>
 		</div>
